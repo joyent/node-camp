@@ -1,0 +1,9 @@
+{
+  "id": "com.creationix.ballbounce",
+  "version": "0.0.1",
+  "vendor": "Creationix",
+  "type": "web",
+  "main": "index.html",
+  "title": "BallBounce",
+  "icon": "icon.png"
+}
