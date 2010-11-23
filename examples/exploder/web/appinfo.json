@@ -1,9 +1,9 @@
 {
-  "id": "com.creationix.ballbounce",
-  "version": "0.0.1",
-  "vendor": "Creationix",
+  "id": "org.nodejs.camp.exploder",
+  "version": "1.0.0",
+  "vendor": "Node Camp",
   "type": "web",
   "main": "index.html",
-  "title": "BallBounce",
+  "title": "Exploder",
   "icon": "icon.png"
 }
