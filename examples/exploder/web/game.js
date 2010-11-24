@@ -17,8 +17,8 @@ Engine('sprites', function (engine) {
   function Spark(x, y, angle) {
     Sprite.call(this, x, y, angle, 'dart');
     angle *= angleToRadian;
-    this.mx = Math.sin(angle) * 500;
-    this.my = -Math.cos(angle) * 500;
+    this.mx = Math.sin(angle) * 200;
+    this.my = -Math.cos(angle) * 200;
     this.life = 2000;
   }
   Spark.prototype.animate = function (delta) {
@@ -33,10 +33,10 @@ Engine('sprites', function (engine) {
 
   function Ball(x, y, angle) {
     var n = Math.floor(angle / 360 * colors.length);
-    Sprite.call(this, x, y, angle, colors[n]);
+    Sprite.call(this, x, y, 0, colors[n]);
     angle *= angleToRadian;
-    this.mx = Math.sin(angle) * 300;
-    this.my = -Math.cos(angle) * 300;
+    this.mx = Math.sin(angle) * 100;
+    this.my = -Math.cos(angle) * 100;
   }
   Ball.prototype.animate = function (delta) {
     if (this.x < 0) {
@@ -69,35 +69,37 @@ Engine('sprites', function (engine) {
   var down = false;
   var fire = false;
   var start = 0;
-  document.body.addEventListener('mousedown', function (evt) {
+
+  engine.on('down', function (evt) {
     down = true;
     evt.stopPropagation();
     evt.preventDefault();
-  }, true);
-  document.body.addEventListener('mouseup', function (evt) {
-    down = false;
-    evt.stopPropagation();
-    evt.preventDefault();
-  }, true);
-  document.body.addEventListener('mousemove', function (evt) {
+  });
+  engine.on('move', function (evt) {
     if (!down) {
       return;
     }
     fire = evt;
     evt.stopPropagation();
     evt.preventDefault();
-  }, true);
+  });
+  engine.on('up', function (evt) {
+    down = false;
+    evt.stopPropagation();
+    evt.preventDefault();
+  });
+
   function explode(evt) {
     start = (start + 11) % 36;
     for (var i = start; i < 360; i += 36) {
       (new Spark(evt.clientX - 24, evt.clientY - 24, i)).show();
     }
   }
-  setInterval(function () {
+  engine.on('animate', function (delta) {
     if (fire) {
       explode(fire);
       fire = false;
     }
-  }, 30);
+  });
 
 });
