@@ -3,7 +3,6 @@ var Connect = require('connect');
 
 Connect.createServer(
   Connect.logger(),
-  Connect.cache(),
   Connect.staticProvider(__dirname + "/web")
 ).listen(8080);
 
