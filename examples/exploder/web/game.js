@@ -22,7 +22,6 @@ Engine(function (Sprite) {
     this.life = 2000;
   }
   Spark.prototype.animate = function (delta) {
-    Sprite.prototype.animate.call(this, delta);
     this.life -= delta;
     if (this.life < 0 ||
         this.x < -48 || this.y < -48 ||
@@ -40,7 +39,6 @@ Engine(function (Sprite) {
     this.my = Math.cos(angle) * 300;
   }
   Ball.prototype.animate = function (delta) {
-    Sprite.prototype.animate.call(this, delta);
     if (this.x < 0) {
       this.x *= -1;
       this.mx *= -1;
