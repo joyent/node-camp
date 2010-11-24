@@ -19,7 +19,7 @@ Engine('sprites', function (engine) {
     angle *= angleToRadian;
     this.mx = Math.sin(angle) * 200;
     this.my = -Math.cos(angle) * 200;
-    this.life = 2000;
+    this.life = 1000;
   }
   Spark.prototype.animate = function (delta) {
     this.life -= delta;
@@ -35,8 +35,8 @@ Engine('sprites', function (engine) {
     var n = Math.floor(angle / 360 * colors.length);
     Sprite.call(this, x, y, 0, colors[n]);
     angle *= angleToRadian;
-    this.mx = Math.sin(angle) * 100;
-    this.my = -Math.cos(angle) * 100;
+    this.mx = Math.sin(angle) * 200;
+    this.my = -Math.cos(angle) * 200;
   }
   Ball.prototype.animate = function (delta) {
     if (this.x < 0) {
@@ -90,12 +90,14 @@ Engine('sprites', function (engine) {
   });
 
   function explode(evt) {
-    start = (start + 11) % 36;
-    for (var i = start; i < 360; i += 36) {
+    start = (start + 19) % 48;
+    for (var i = start; i < 360; i += 48) {
       (new Spark(evt.clientX - 24, evt.clientY - 24, i)).show();
     }
   }
+  var fpsDiv = document.getElementById('fps');
   engine.on('animate', function (delta) {
+    fpsDiv.innerText = (Math.floor(1000 / delta) / 1) + " fps";
     if (fire) {
       explode(fire);
       fire = false;
