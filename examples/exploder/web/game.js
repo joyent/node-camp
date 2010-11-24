@@ -1,6 +1,7 @@
 /*global Engine document window*/
 
-Engine(function (Sprite) {
+Engine('sprites', function (engine) {
+  var Sprite = engine.Sprite;
   var colors = ['green', 'blue', 'brown', 'white', 'yellow', 'orange',
                 'purple', 'red', 'grey'];
 
@@ -14,8 +15,7 @@ Engine(function (Sprite) {
   var angleToRadian = Math.PI / 180;
 
   function Spark(x, y, angle) {
-    Sprite.call(this, x, y, 'dart');
-    this.r = angle;
+    Sprite.call(this, x, y, angle, 'dart');
     angle *= angleToRadian;
     this.mx = Math.sin(angle) * 500;
     this.my = -Math.cos(angle) * 500;
@@ -33,10 +33,10 @@ Engine(function (Sprite) {
 
   function Ball(x, y, angle) {
     var n = Math.floor(angle / 360 * colors.length);
-    Sprite.call(this, x, y, colors[n]);
+    Sprite.call(this, x, y, angle, colors[n]);
     angle *= angleToRadian;
     this.mx = Math.sin(angle) * 300;
-    this.my = Math.cos(angle) * 300;
+    this.my = -Math.cos(angle) * 300;
   }
   Ball.prototype.animate = function (delta) {
     if (this.x < 0) {
@@ -99,6 +99,5 @@ Engine(function (Sprite) {
       fire = false;
     }
   }, 30);
-
 
 });
