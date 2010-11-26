@@ -17,11 +17,30 @@ Engine('sprites', function (engine) {
 
   var angleToRadian = Math.PI / 180;
 
+  function Igniter(x, y, color) {
+    Sprite.call(this, x, y, 0, color);
+    this.life = 1000;
+  }
+  Igniter.prototype.animate = function (delta) {
+    this.life -= delta;
+    this.r += delta / 300;
+    explode({
+      clientX: this.x + 24,
+      clientY: this.y + 24
+    });
+    if (this.life < 0) {
+      this.hide();
+    }
+  };
+  Sprite.adopt(Igniter);
+
+    
+
   function Spark(x, y, angle) {
     Sprite.call(this, x, y, angle, 'dart');
     angle *= angleToRadian;
-    this.mx = Math.sin(angle) * 200;
-    this.my = -Math.cos(angle) * 200;
+    this.mx = Math.sin(angle) * 300;
+    this.my = -Math.cos(angle) * 300;
     this.life = 1000;
   }
   Spark.prototype.animate = function (delta) {
@@ -43,8 +62,8 @@ Engine('sprites', function (engine) {
       var d = Math.sqrt((ball.x - self.x) * (ball.x - self.x) +
                         (ball.y - self.y) * (ball.y - self.y));
       if (d <= distance) {
-        ball.mx += self.mx / 10;
-        ball.my += self.my / 10;
+        ball.mx += self.mx / 15;
+        ball.my += self.my / 15;
         self.life = -1;
       }
 
@@ -118,12 +137,7 @@ Engine('sprites', function (engine) {
     var speed = Math.sqrt(this.mx * this.mx + this.my * this.my);
     if (speed > 400) {
       this.hide();
-      for (var i = 0; i < 30; i++) {
-        explode({
-          clientX: this.x + 24,
-          clientY: this.y + 24
-        });
-      }
+      (new Igniter(this.x, this.y, this.img)).show();
     }
 
   };
@@ -174,8 +188,8 @@ Engine('sprites', function (engine) {
   engine.on('animate', function (delta) {
     if (!engine.sprites.length) {
       explode({
-        clientX: width / 2,
-        clientY: height / 2
+        clientX: width / 2 + 24,
+        clientY: height / 2 + 24
       });
     }
     fpsDiv.innerText = (Math.floor(1000 / delta) / 1) + " fps";
