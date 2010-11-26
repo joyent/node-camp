@@ -1,0 +1,9 @@
+{
+  "id": "org.nodejs.camp.conquest",
+  "version": "1.0.0",
+  "vendor": "Node Camp",
+  "type": "web",
+  "main": "index.html",
+  "title": "Conquest",
+  "icon": "icon.png"
+}
