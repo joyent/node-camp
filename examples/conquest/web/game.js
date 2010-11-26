@@ -111,11 +111,16 @@ Engine('map', function (engine) {
     });
   }
 
-  function Country(x, y, owner, grid, props) {
-    Sprite.call(this, x * 30, y * 30);
-    this.owner = owner;
+  function Country(x, y, grid) {
+    Sprite.call(this, x * 20, y * 20);
     this.grid = grid;
-    this.props = props;
+    this.owner = null;
+    this.resource = null;
+    this.city = false;
+    this.stockpile = false;
+    this.horse = false;
+    this.weapon = false;
+    this.boats = 0;
     this.gx = x;
     this.gy = y;
     this.mx = 100;
@@ -123,7 +128,11 @@ Engine('map', function (engine) {
 
   Country.prototype.renderDiv = function () {
     var div = this.div = document.createElement('div');
-    div.setAttribute('class', 'country ' + this.owner.color);
+    var img = 'country';
+    if (this.owner) {
+      img += " " + this.owner.color;
+    }
+    div.setAttribute('class', img);
     this.renderLand();
     this.renderIcons();
     return div;
@@ -135,18 +144,18 @@ Engine('map', function (engine) {
     rectify(this.grid).forEach(function (rect) {
       var chunk = document.createElement('div');
       chunk.setAttribute('class', 'bordered');
-      chunk.style.top = (rect.y * 30 + 1) + "px";
-      chunk.style.left = (rect.x * 30 + 1) + "px";
-      chunk.style.width = (rect.w * 30 - 6) + "px";
-      chunk.style.height = (rect.h * 30 - 6) + "px";
+      chunk.style.top = (rect.y * 20 + 1) + "px";
+      chunk.style.left = (rect.x * 20 + 1) + "px";
+      chunk.style.width = (rect.w * 20 - 6) + "px";
+      chunk.style.height = (rect.h * 20 - 6) + "px";
       land.appendChild(chunk);
     });
     rectify(this.grid).forEach(function (rect) {
       var chunk = document.createElement('div');
-      chunk.style.top = (rect.y * 30 + 3) + "px";
-      chunk.style.left = (rect.x * 30 + 3) + "px";
-      chunk.style.width = (rect.w * 30 - 6) + "px";
-      chunk.style.height = (rect.h * 30 - 6) + "px";
+      chunk.style.top = (rect.y * 20 + 3) + "px";
+      chunk.style.left = (rect.x * 20 + 3) + "px";
+      chunk.style.width = (rect.w * 20 - 6) + "px";
+      chunk.style.height = (rect.h * 20 - 6) + "px";
       land.appendChild(chunk);
     });
     if (this.landDiv) {
@@ -178,15 +187,16 @@ Engine('map', function (engine) {
       return findSpace();
     }
 
-
+/*
     Object.keys(this.props).forEach(function (type) {
       var pos = findSpace();
       var icon = document.createElement('div');
       icon.setAttribute('class', type);
-      icon.style.top = (pos.y * 30) + "px";
-      icon.style.left = (pos.x * 30) + "px";
+      icon.style.top = (pos.y * 20) + "px";
+      icon.style.left = (pos.x * 20) + "px";
       icons.appendChild(icon);
     });
+    */
 
     if (this.iconsDiv) {
       this.div.replaceChild(icons, this.iconsDiv);
@@ -207,287 +217,218 @@ Engine('map', function (engine) {
   var jack = new Player('Jack', 'orange');
   var miranda = new Player('Miranda', 'purple');
   var lily = new Player('Lily', 'yellow');
-  (new Country(0, 10, tim, [
+  (new Country(0, 10, [
     [1, 1, 0, 1, 1],
     [1, 1, 1, 1, 1],
     [0, 1, 1, 1, 0]
-  ], {
-    weapon: true,
-    pasture: true,
-    horse: true,
-    boat: true
-  })).show();
-  (new Country(0, 12, jack, [
+  ])).show();
+  (new Country(0, 12, [
     [1, 0],
     [1, 1],
     [1, 1],
     [1, 1],
     [1, 1],
     [1, 0]
-  ], {
-    tree: true,
-    horse: true
-  })).show();
-  (new Country(2, 14, jack, [
+  ])).show();
+  (new Country(2, 14, [
     [1, 1, 1, 0],
     [1, 1, 1, 0],
     [0, 1, 1, 1],
     [0, 0, 1, 1]
-  ], {
-    tree: true,
-    horse: true
-  })).show();
-  (new Country(1, 2, jack, [
+  ])).show();
+  (new Country(1, 2, [
     [0, 0, 0, 0, 1, 1],
     [0, 0, 0, 1, 1, 0],
     [1, 1, 1, 1, 0, 0],
     [0, 1, 1, 0, 0, 0],
     [0, 1, 0, 0, 0, 0]
-  ], {
-  })).show();
-  (new Country(7, 0, jack, [
+  ])).show();
+  (new Country(7, 0, [
     [0, 1, 1, 1, 0],
     [1, 1, 1, 1, 0],
     [1, 1, 1, 1, 1],
     [0, 0, 0, 0, 1],
-  ], {
-    tree: true
-  })).show();
-  (new Country(6, 3, tim, [
+  ])).show();
+  (new Country(6, 3, [
     [1, 1, 1, 1, 0],
     [0, 0, 1, 1, 0],
     [0, 0, 1, 1, 1],
     [0, 0, 1, 1, 1]
-  ], {
-    tree: 2,
-    weapon: true,
-    city: true
-  })).show();
-  (new Country(6, 6, tim, [
+  ])).show();
+  (new Country(6, 6, [
     [0, 0, 0, 0, 0, 1],
     [1, 1, 1, 1, 1, 1],
     [0, 1, 1, 1, 1, 1]
-  ], {
-    coal: 2,
-    weapon: true
-  })).show();
-  (new Country(14, 0, jack, [
+  ])).show();
+  (new Country(14, 0, [
     [0, 1, 1, 0, 0, 0],
     [0, 1, 1, 1, 0, 0],
     [1, 1, 1, 1, 0, 0],
     [0, 0, 0, 1, 1, 1]
-  ], {
-  })).show();
-  (new Country(17, 0, tim, [
+  ])).show();
+  (new Country(17, 0, [
     [1, 1, 1, 1, 1, 1, 1],
     [0, 1, 1, 1, 0, 0, 0],
     [0, 1, 1, 0, 0, 0, 0]
   ], {
   })).show();
-  (new Country(18, 1, jack, [
+  (new Country(18, 1, [
     [0, 0, 0, 1, 1],
     [0, 0, 1, 1, 1],
     [0, 0, 1, 1, 0],
     [1, 1, 1, 0, 0]
-  ], {
-  })).show();
-  (new Country(22, 0, tim, [
+  ])).show();
+  (new Country(22, 0, [
     [0, 0, 1, 1, 1, 1],
     [0, 1, 1, 1, 1, 0],
     [0, 1, 1, 0, 0, 0],
     [1, 1, 1, 0, 0, 0],
     [0, 0, 1, 0, 0, 0]
-  ], {
-    weapon: true
-  })).show();
-  (new Country(25, 2, miranda, [
+  ])).show();
+  (new Country(25, 2, [
     [1, 1, 1, 1, 0],
     [1, 1, 1, 1, 1],
     [1, 1, 1, 0, 0]
-  ], {
-    iron: 2
-  })).show();
-  (new Country(27, 1, miranda, [
+  ])).show();
+  (new Country(27, 1, [
     [1, 1, 1, 1, 0, 0],
     [0, 0, 1, 1, 0, 0],
     [0, 0, 0, 1, 1, 1],
     [0, 0, 0, 0, 1, 1]
-  ], {
-  })).show();
-  (new Country(28, 0, miranda, [
+  ])).show();
+  (new Country(28, 0, [
     [1, 1, 1, 1, 1, 0, 0, 0],
     [0, 0, 0, 1, 1, 1, 0, 0],
     [0, 0, 0, 1, 1, 1, 1, 0],
     [0, 0, 0, 0, 0, 0, 1, 1]
-  ], {
-    coal: true
-  })).show();
-  (new Country(34, 4, jack, [
+  ])).show();
+  (new Country(34, 4, [
     [1, 1, 0, 0],
     [1, 1, 1, 1],
     [1, 1, 1, 0],
     [1, 1, 1, 0]
-  ], {
-  })).show();
-  (new Country(37, 4, miranda, [
+  ])).show();
+  (new Country(37, 4, [
     [0, 0, 1],
     [0, 0, 1],
     [1, 1, 1],
     [1, 1, 1],
     [1, 1, 1],
     [0, 0, 1]
-  ], {
-  })).show();
-  (new Country(35, 8, miranda, [
+  ])).show();
+  (new Country(35, 8, [
     [1, 1, 0, 0, 0],
     [1, 1, 1, 1, 0],
     [1, 1, 1, 1, 1],
     [0, 0, 1, 1, 1],
     [0, 0, 0, 0, 1]
-  ], {
-    weapon: true
-  })).show();
-  (new Country(33, 11, miranda, [
+  ])).show();
+  (new Country(33, 11, [
     [0, 0, 1, 1, 0],
     [1, 1, 1, 1, 1],
     [1, 1, 0, 0, 0],
     [1, 0, 0, 0, 0]
-  ], {
-  })).show();
-  (new Country(35, 12, miranda, [
+  ])).show();
+  (new Country(35, 12, [
     [0, 0, 0, 1, 0],
     [1, 1, 1, 1, 1],
     [1, 1, 1, 1, 1],
     [0, 0, 1, 1, 1],
     [0, 0, 0, 1, 0]
-  ], {
-  })).show();
-  (new Country(37, 16, jack, [
+  ])).show();
+  (new Country(37, 16, [
     [1, 0, 1],
     [1, 1, 1],
     [1, 1, 1],
     [0, 1, 1]
-  ], {
-  })).show();
-  (new Country(33, 14, miranda, [
+  ])).show();
+  (new Country(33, 14, [
     [0, 1, 0, 0],
     [1, 1, 1, 1],
     [1, 1, 1, 0],
     [1, 1, 0, 0],
     [0, 1, 0, 0]
-  ], {
-  })).show();
-  (new Country(19, 4, miranda, [
+  ])).show();
+  (new Country(19, 4, [
     [0, 0, 1, 0],
     [0, 0, 1, 0],
     [0, 1, 1, 0],
     [1, 1, 1, 0],
     [0, 1, 1, 0],
     [0, 1, 1, 1]
-  ], {
-  })).show();
-  (new Country(22, 4, tim, [
+  ])).show();
+  (new Country(22, 4, [
     [1, 1, 0],
     [1, 1, 1],
     [1, 1, 1],
     [1, 1, 1]
-  ], {
-    gold: 2
-  })).show();
-  (new Country(25, 5, tim, [
+  ])).show();
+  (new Country(25, 5, [
     [1, 1, 1, 0, 0],
     [1, 1, 1, 0, 0],
     [0, 1, 1, 1, 1],
     [0, 0, 0, 1, 1]
-  ], {
-    coal: 2,
-    weapon: true
-  })).show();
-  (new Country(28, 9, tim, [
+  ])).show();
+  (new Country(28, 9, [
     [0, 1, 1, 1, 1],
     [1, 1, 1, 1, 1],
     [1, 0, 0, 1, 1],
     [0, 0, 0, 0, 1]
-  ], {
-    gold: 2
-  })).show();
-  (new Country(28, 11, tim, [
+  ])).show();
+  (new Country(28, 11, [
     [0, 1, 1, 0, 0],
     [1, 1, 1, 1, 0],
     [1, 1, 1, 1, 1]
-  ], {
-    iron: true
-  })).show();
-  (new Country(25, 13, tim, [
+  ])).show();
+  (new Country(25, 13, [
     [0, 0, 1, 0, 0, 0],
     [0, 1, 1, 1, 1, 1],
     [1, 1, 1, 1, 1, 1]
-  ], {
-  })).show();
-  (new Country(20, 12, lily, [
+  ])).show();
+  (new Country(20, 12, [
     [0, 0, 0, 0, 0, 1],
     [1, 1, 0, 1, 1, 1],
     [1, 1, 1, 1, 1, 1],
     [0, 0, 0, 0, 1, 0]
-  ], {
-    horse: true
-  })).show();
-  (new Country(15, 14, lily, [
+  ])).show();
+  (new Country(15, 14, [
     [0, 0, 0, 1, 1, 0],
     [0, 0, 1, 1, 1, 1],
     [0, 1, 1, 1, 0, 1],
     [1, 1, 0, 0, 0, 0]
-  ], {
-    gold: 2,
-    horse: true
-  })).show();
-  (new Country(12, 16, lily, [
+  ])).show();
+  (new Country(12, 16, [
     [0, 1, 1, 1],
     [1, 1, 1, 0],
     [1, 1, 1, 0],
     [1, 0, 0, 0]
-  ], {
-    horse: true
-  })).show();
-  (new Country(13, 13, lily, [
+  ])).show();
+  (new Country(13, 13, [
     [0, 0, 0, 0, 1, 1],
     [1, 1, 1, 1, 1, 0],
     [1, 1, 1, 1, 0, 0]
-  ], {
-    pasture: true,
-    city: true,
-    horse: true
-  })).show();
-  (new Country(13, 8, lily, [
+  ])).show();
+  (new Country(13, 8, [
     [0, 0, 1, 0],
     [1, 1, 1, 0],
     [0, 1, 1, 0],
     [0, 1, 1, 0],
     [0, 1, 1, 1],
     [0, 0, 1, 1]
-  ], {
-    pasture: true,
-    horse: true
-  })).show();
-  (new Country(10, 13, lily, [
+  ])).show();
+  (new Country(10, 13, [
     [0, 1, 1, 1, 1],
     [0, 0, 1, 0, 0],
     [1, 1, 1, 0, 0],
     [1, 1, 1, 0, 0]
-  ], {
-    stockpile: true,
-    horse: true
-  })).show();
-  (new Country(8, 13, lily, [
+  ])).show();
+  (new Country(8, 13, [
     [1, 1, 1, 0],
     [1, 1, 1, 1],
     [1, 0, 0, 0],
     [1, 0, 0, 0],
     [1, 0, 0, 0],
     [1, 0, 0, 0]
-  ], {
-    iron: true,
-    horse: true
-  })).show();
+  ])).show();
 
 });

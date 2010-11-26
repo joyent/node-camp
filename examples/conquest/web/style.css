@@ -13,11 +13,11 @@ html, body {
 
 #map {
   position: absolute;
-  width: 1200px;
-  height: 600px;
+  width: 800px;
+  height: 400px;
   left: 50%;
   top: 50%;
-  margin: -300px 0 0 -600px;
+  margin: -200px 0 0 -400px;
   background-color: #0b0c1e;
 }
 .country {
@@ -25,8 +25,8 @@ html, body {
 }
 .icons div {
   position: absolute;
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   background-image: url(sprites.png);
 }
 .land div {
@@ -53,18 +53,18 @@ html, body {
 .orange .land div.bordered { border-color: #f57900; }
 .blue .land div.bordered { border-color: #3465a4; }
 
-.purple .icons .boat { background-position: 90px 0px; }
-.brown .icons .boat { background-position: 60px 0px; }
-.red .icons .boat { background-position: 30px 0px; }
-.yellow .icons .boat { background-position: 0px 90px; }
-.green .icons .boat { background-position: 90px 90px; }
-.orange .icons .boat { background-position: 60px 90px; }
-.blue .icons .boat { background-position: 30px 90px; }
-.icons .stockpile { background-position: 0px 60px; }
-.icons .iron { background-position: 90px 60px; }
-.icons .tree { background-position: 60px 60px; }
-.icons .gold { background-position: 30px 60px; }
-.icons .weapon { background-position: 0px 30px; }
-.icons .coal { background-position: 90px 30px; }
-.icons .horse { background-position: 60px 30px; }
-.icons .pasture { background-position: 30px 30px; }
+.purple .icons .boat { background-position: 60px 0px; }
+.brown .icons .boat { background-position: 40px 0px; }
+.red .icons .boat { background-position: 20px 0px; }
+.yellow .icons .boat { background-position: 0px 60px; }
+.green .icons .boat { background-position: 60px 60px; }
+.orange .icons .boat { background-position: 40px 60px; }
+.blue .icons .boat { background-position: 20px 60px; }
+.icons .stockpile { background-position: 0px 40px; }
+.icons .iron { background-position: 60px 40px; }
+.icons .tree { background-position: 40px 40px; }
+.icons .gold { background-position: 20px 40px; }
+.icons .weapon { background-position: 0px 20px; }
+.icons .coal { background-position: 60px 20px; }
+.icons .horse { background-position: 40px 20px; }
+.icons .pasture { background-position: 20px 20px; }
