@@ -13,11 +13,11 @@ html, body {
 
 #map {
   position: absolute;
-  width: 800px;
-  height: 400px;
+  width: 960px;
+  height: 480px;
   left: 50%;
   top: 50%;
-  margin: -200px 0 0 -400px;
+  margin: -240px 0 0 -480px;
   background-color: #0b0c1e;
 }
 .country {
@@ -27,7 +27,7 @@ html, body {
   position: absolute;
   width: 20px;
   height: 20px;
-  background-image: url(sprites.png);
+  background-image: url(imgs/sprites.png);
 }
 .land div {
   position:absolute;
@@ -37,6 +37,13 @@ html, body {
 .land div.bordered { 
   border: 2px solid #babdb6;
 }
+.city div {
+  background-attachment: fixed;
+}
+.land div {
+  -webkit-transition: all 0.5s ease;
+}
+
 .purple .land div { background-color: #ad7fa8; }
 .brown .land div { background-color: #e9b96e; }
 .red .land div { background-color: #ef2929; }
@@ -44,6 +51,14 @@ html, body {
 .green .land div { background-color: #8ae234; }
 .orange .land div { background-color: #fcaf3e; }
 .blue .land div { background-color: #729fcf; }
+
+.purple .city div { background-image: url(imgs/purple-city.png); }
+.brown .city div { background-image: url(imgs/brown-city.png); }
+.red .city div { background-image: url(imgs/red-city.png); }
+.yellow .city div { background-image: url(imgs/yellow-city.png); }
+.green .city div { background-image: url(imgs/green-city.png); }
+.orange .city div { background-image: url(imgs/orange-city.png); }
+.blue .city div { background-image: url(imgs/blue-city.png); }
 
 .purple .land div.bordered { border-color: #75507b; }
 .brown .land div.bordered { border-color: #c17d11; }

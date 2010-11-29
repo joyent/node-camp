@@ -1,4 +1,4 @@
-/*global window document Engine*/
+/*global window document Engine level*/
 
 Engine('map', function (engine) {
 
@@ -112,7 +112,7 @@ Engine('map', function (engine) {
   }
 
   function Country(x, y, grid) {
-    Sprite.call(this, x * 20, y * 20);
+    Sprite.call(this, x * 24, y * 24);
     this.grid = grid;
     this.owner = null;
     this.resource = null;
@@ -124,38 +124,55 @@ Engine('map', function (engine) {
     this.gx = x;
     this.gy = y;
     this.mx = 100;
+    this.rects = rectify(grid);
   }
 
   Country.prototype.renderDiv = function () {
     var div = this.div = document.createElement('div');
-    var img = 'country';
-    if (this.owner) {
-      img += " " + this.owner.color;
-    }
-    div.setAttribute('class', img);
+    this.setOwner(this.owner);
     this.renderLand();
     this.renderIcons();
     return div;
   };
 
+  Country.prototype.setOwner = function (owner) {
+    this.owner = owner;
+    var img = 'country';
+    if (this.owner) {
+      img += " " + this.owner.color;
+    }
+    this.div.setAttribute('class', img);
+  };
+
+  Country.prototype.setCity = function (city) {
+    this.city = city;
+    this.landDiv.setAttribute('class', 'land' + (city ? ' city' : ''));
+  };
+
   Country.prototype.renderLand = function () {
     var land = document.createElement('div');
     land.setAttribute('class', 'land');
-    rectify(this.grid).forEach(function (rect) {
+    var h = this.grid.length * 24;
+    var w = this.grid[0].length * 24;
+    land.style.width = w + "px";
+    land.style.height = h + "px";
+    this.div.style.width = w + "px";
+    this.div.style.height = h + "px";
+    this.rects.forEach(function (rect) {
       var chunk = document.createElement('div');
       chunk.setAttribute('class', 'bordered');
-      chunk.style.top = (rect.y * 20 + 1) + "px";
-      chunk.style.left = (rect.x * 20 + 1) + "px";
-      chunk.style.width = (rect.w * 20 - 6) + "px";
-      chunk.style.height = (rect.h * 20 - 6) + "px";
+      chunk.style.top = (rect.y * 24 + 1) + "px";
+      chunk.style.left = (rect.x * 24 + 1) + "px";
+      chunk.style.width = (rect.w * 24 - 6) + "px";
+      chunk.style.height = (rect.h * 24 - 6) + "px";
       land.appendChild(chunk);
     });
-    rectify(this.grid).forEach(function (rect) {
+    this.rects.forEach(function (rect) {
       var chunk = document.createElement('div');
-      chunk.style.top = (rect.y * 20 + 3) + "px";
-      chunk.style.left = (rect.x * 20 + 3) + "px";
-      chunk.style.width = (rect.w * 20 - 6) + "px";
-      chunk.style.height = (rect.h * 20 - 6) + "px";
+      chunk.style.top = (rect.y * 24 + 3) + "px";
+      chunk.style.left = (rect.x * 24 + 3) + "px";
+      chunk.style.width = (rect.w * 24 - 6) + "px";
+      chunk.style.height = (rect.h * 24 - 6) + "px";
       land.appendChild(chunk);
     });
     if (this.landDiv) {
@@ -192,8 +209,8 @@ Engine('map', function (engine) {
       var pos = findSpace();
       var icon = document.createElement('div');
       icon.setAttribute('class', type);
-      icon.style.top = (pos.y * 20) + "px";
-      icon.style.left = (pos.x * 20) + "px";
+      icon.style.top = (pos.y * 24) + "px";
+      icon.style.left = (pos.x * 24) + "px";
       icons.appendChild(icon);
     });
     */
@@ -217,218 +234,22 @@ Engine('map', function (engine) {
   var jack = new Player('Jack', 'orange');
   var miranda = new Player('Miranda', 'purple');
   var lily = new Player('Lily', 'yellow');
-  (new Country(0, 10, [
-    [1, 1, 0, 1, 1],
-    [1, 1, 1, 1, 1],
-    [0, 1, 1, 1, 0]
-  ])).show();
-  (new Country(0, 12, [
-    [1, 0],
-    [1, 1],
-    [1, 1],
-    [1, 1],
-    [1, 1],
-    [1, 0]
-  ])).show();
-  (new Country(2, 14, [
-    [1, 1, 1, 0],
-    [1, 1, 1, 0],
-    [0, 1, 1, 1],
-    [0, 0, 1, 1]
-  ])).show();
-  (new Country(1, 2, [
-    [0, 0, 0, 0, 1, 1],
-    [0, 0, 0, 1, 1, 0],
-    [1, 1, 1, 1, 0, 0],
-    [0, 1, 1, 0, 0, 0],
-    [0, 1, 0, 0, 0, 0]
-  ])).show();
-  (new Country(7, 0, [
-    [0, 1, 1, 1, 0],
-    [1, 1, 1, 1, 0],
-    [1, 1, 1, 1, 1],
-    [0, 0, 0, 0, 1],
-  ])).show();
-  (new Country(6, 3, [
-    [1, 1, 1, 1, 0],
-    [0, 0, 1, 1, 0],
-    [0, 0, 1, 1, 1],
-    [0, 0, 1, 1, 1]
-  ])).show();
-  (new Country(6, 6, [
-    [0, 0, 0, 0, 0, 1],
-    [1, 1, 1, 1, 1, 1],
-    [0, 1, 1, 1, 1, 1]
-  ])).show();
-  (new Country(14, 0, [
-    [0, 1, 1, 0, 0, 0],
-    [0, 1, 1, 1, 0, 0],
-    [1, 1, 1, 1, 0, 0],
-    [0, 0, 0, 1, 1, 1]
-  ])).show();
-  (new Country(17, 0, [
-    [1, 1, 1, 1, 1, 1, 1],
-    [0, 1, 1, 1, 0, 0, 0],
-    [0, 1, 1, 0, 0, 0, 0]
-  ], {
-  })).show();
-  (new Country(18, 1, [
-    [0, 0, 0, 1, 1],
-    [0, 0, 1, 1, 1],
-    [0, 0, 1, 1, 0],
-    [1, 1, 1, 0, 0]
-  ])).show();
-  (new Country(22, 0, [
-    [0, 0, 1, 1, 1, 1],
-    [0, 1, 1, 1, 1, 0],
-    [0, 1, 1, 0, 0, 0],
-    [1, 1, 1, 0, 0, 0],
-    [0, 0, 1, 0, 0, 0]
-  ])).show();
-  (new Country(25, 2, [
-    [1, 1, 1, 1, 0],
-    [1, 1, 1, 1, 1],
-    [1, 1, 1, 0, 0]
-  ])).show();
-  (new Country(27, 1, [
-    [1, 1, 1, 1, 0, 0],
-    [0, 0, 1, 1, 0, 0],
-    [0, 0, 0, 1, 1, 1],
-    [0, 0, 0, 0, 1, 1]
-  ])).show();
-  (new Country(28, 0, [
-    [1, 1, 1, 1, 1, 0, 0, 0],
-    [0, 0, 0, 1, 1, 1, 0, 0],
-    [0, 0, 0, 1, 1, 1, 1, 0],
-    [0, 0, 0, 0, 0, 0, 1, 1]
-  ])).show();
-  (new Country(34, 4, [
-    [1, 1, 0, 0],
-    [1, 1, 1, 1],
-    [1, 1, 1, 0],
-    [1, 1, 1, 0]
-  ])).show();
-  (new Country(37, 4, [
-    [0, 0, 1],
-    [0, 0, 1],
-    [1, 1, 1],
-    [1, 1, 1],
-    [1, 1, 1],
-    [0, 0, 1]
-  ])).show();
-  (new Country(35, 8, [
-    [1, 1, 0, 0, 0],
-    [1, 1, 1, 1, 0],
-    [1, 1, 1, 1, 1],
-    [0, 0, 1, 1, 1],
-    [0, 0, 0, 0, 1]
-  ])).show();
-  (new Country(33, 11, [
-    [0, 0, 1, 1, 0],
-    [1, 1, 1, 1, 1],
-    [1, 1, 0, 0, 0],
-    [1, 0, 0, 0, 0]
-  ])).show();
-  (new Country(35, 12, [
-    [0, 0, 0, 1, 0],
-    [1, 1, 1, 1, 1],
-    [1, 1, 1, 1, 1],
-    [0, 0, 1, 1, 1],
-    [0, 0, 0, 1, 0]
-  ])).show();
-  (new Country(37, 16, [
-    [1, 0, 1],
-    [1, 1, 1],
-    [1, 1, 1],
-    [0, 1, 1]
-  ])).show();
-  (new Country(33, 14, [
-    [0, 1, 0, 0],
-    [1, 1, 1, 1],
-    [1, 1, 1, 0],
-    [1, 1, 0, 0],
-    [0, 1, 0, 0]
-  ])).show();
-  (new Country(19, 4, [
-    [0, 0, 1, 0],
-    [0, 0, 1, 0],
-    [0, 1, 1, 0],
-    [1, 1, 1, 0],
-    [0, 1, 1, 0],
-    [0, 1, 1, 1]
-  ])).show();
-  (new Country(22, 4, [
-    [1, 1, 0],
-    [1, 1, 1],
-    [1, 1, 1],
-    [1, 1, 1]
-  ])).show();
-  (new Country(25, 5, [
-    [1, 1, 1, 0, 0],
-    [1, 1, 1, 0, 0],
-    [0, 1, 1, 1, 1],
-    [0, 0, 0, 1, 1]
-  ])).show();
-  (new Country(28, 9, [
-    [0, 1, 1, 1, 1],
-    [1, 1, 1, 1, 1],
-    [1, 0, 0, 1, 1],
-    [0, 0, 0, 0, 1]
-  ])).show();
-  (new Country(28, 11, [
-    [0, 1, 1, 0, 0],
-    [1, 1, 1, 1, 0],
-    [1, 1, 1, 1, 1]
-  ])).show();
-  (new Country(25, 13, [
-    [0, 0, 1, 0, 0, 0],
-    [0, 1, 1, 1, 1, 1],
-    [1, 1, 1, 1, 1, 1]
-  ])).show();
-  (new Country(20, 12, [
-    [0, 0, 0, 0, 0, 1],
-    [1, 1, 0, 1, 1, 1],
-    [1, 1, 1, 1, 1, 1],
-    [0, 0, 0, 0, 1, 0]
-  ])).show();
-  (new Country(15, 14, [
-    [0, 0, 0, 1, 1, 0],
-    [0, 0, 1, 1, 1, 1],
-    [0, 1, 1, 1, 0, 1],
-    [1, 1, 0, 0, 0, 0]
-  ])).show();
-  (new Country(12, 16, [
-    [0, 1, 1, 1],
-    [1, 1, 1, 0],
-    [1, 1, 1, 0],
-    [1, 0, 0, 0]
-  ])).show();
-  (new Country(13, 13, [
-    [0, 0, 0, 0, 1, 1],
-    [1, 1, 1, 1, 1, 0],
-    [1, 1, 1, 1, 0, 0]
-  ])).show();
-  (new Country(13, 8, [
-    [0, 0, 1, 0],
-    [1, 1, 1, 0],
-    [0, 1, 1, 0],
-    [0, 1, 1, 0],
-    [0, 1, 1, 1],
-    [0, 0, 1, 1]
-  ])).show();
-  (new Country(10, 13, [
-    [0, 1, 1, 1, 1],
-    [0, 0, 1, 0, 0],
-    [1, 1, 1, 0, 0],
-    [1, 1, 1, 0, 0]
-  ])).show();
-  (new Country(8, 13, [
-    [1, 1, 1, 0],
-    [1, 1, 1, 1],
-    [1, 0, 0, 0],
-    [1, 0, 0, 0],
-    [1, 0, 0, 0],
-    [1, 0, 0, 0]
-  ])).show();
+  var people = [tim, jack, miranda, lily];
+  var countries = level.map(function (data) {
+    var country = new Country(data[0], data[1], data[2]);
+    country.show();
+    return country;
+  });
+
+  countries.choose = function () {
+    return this[Math.floor(Math.random() * this.length)];
+  };
+  people.choose = countries.choose;
+  engine.on('animate', function (delta) {
+    var country = countries.choose();
+    country.setOwner(people.choose());
+    country.setCity(Math.random() > 0.5);
+  });
+
 
 });
