@@ -129,6 +129,7 @@ Engine('map', function (engine) {
 
   Country.prototype.renderDiv = function () {
     var div = this.div = document.createElement('div');
+    div.sprite = this;
     this.setOwner(this.owner);
     this.renderLand();
     this.renderIcons();
@@ -165,12 +166,6 @@ Engine('map', function (engine) {
   Country.prototype.renderLand = function () {
     var land = document.createElement('div');
     land.setAttribute('class', 'land');
-    var h = this.grid.length * 24;
-    var w = this.grid[0].length * 24;
-    land.style.width = w + "px";
-    land.style.height = h + "px";
-    this.div.style.width = w + "px";
-    this.div.style.height = h + "px";
     this.rects.forEach(function (rect) {
       var chunk = document.createElement('div');
       chunk.setAttribute('class', 'bordered');
@@ -207,8 +202,8 @@ Engine('map', function (engine) {
       if (n > 1000) { 
         return { x: 0, y: 0 };
       }
-      var y = Math.floor(Math.random() * self.grid.length);
-      var row = self.grid[y];
+      var y = Math.floor(Math.random() * clone.length);
+      var row = clone[y];
       var x = Math.floor(Math.random() * row.length);
       if (row[x]) {
         row[x] = 0;
@@ -253,11 +248,11 @@ Engine('map', function (engine) {
     this.color = color;
   }
 
-  var tim = new Player('Tim', 'blue');
-  var jack = new Player('Jack', 'orange');
-  var miranda = new Player('Miranda', 'purple');
-  var lily = new Player('Lily', 'yellow');
-  var people = [tim, jack, miranda, lily];
+  var people = ['blue', 'brown', 'green', 'orange', 'purple', 'red', 'yellow'
+  ].map(function (color) {
+    return new Player(color, color);
+  });
+    
   var countries = level.map(function (data) {
     var country = new Country(data[0], data[1], data[2]);
     country.show();
@@ -279,8 +274,9 @@ Engine('map', function (engine) {
   });
 
   people.choose = countries.choose;
-  setInterval(function () {
-    var country = countries.choose();
+
+
+  function change(country) {
     var person = people.choose();
     if (country.owner === person) {
       switch (Math.floor(Math.random() * 4)) {
@@ -301,8 +297,26 @@ Engine('map', function (engine) {
     } else {
       country.setOwner(person);
       country.setCity(false);
+      country.setStockpile(false);
     }
-  }, 100);
+  }
 
+  engine.on('up', onClick);
+
+  function onClick(evt) {
+    var target = evt.target;
+    while (!target.sprite) {
+      console.log(target);
+      target = target.parentNode;
+      if (target === document) {
+        return;
+      }
+    }
+    change(target.sprite);
+  }
+
+//  setInterval(function () {
+//    change(countries.choose());
+//  }, 1000);
 
 });
