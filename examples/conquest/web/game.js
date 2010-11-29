@@ -148,6 +148,19 @@ Engine('map', function (engine) {
     this.city = city;
     this.landDiv.setAttribute('class', 'land' + (city ? ' city' : ''));
   };
+  Country.prototype.setWeapon = function (weapon) {
+    this.weapon = weapon;
+    this.renderIcons();
+  };
+  Country.prototype.setHorse = function (horse) {
+    this.horse = horse;
+    this.renderIcons();
+  };
+  Country.prototype.setStockpile = function (stockpile) {
+    this.stockpile = stockpile;
+    this.renderIcons();
+  };
+
 
   Country.prototype.renderLand = function () {
     var land = document.createElement('div');
@@ -203,17 +216,27 @@ Engine('map', function (engine) {
       }
       return findSpace();
     }
-
-/*
-    Object.keys(this.props).forEach(function (type) {
-      var pos = findSpace();
+    function addIcon(name) {
       var icon = document.createElement('div');
-      icon.setAttribute('class', type);
-      icon.style.top = (pos.y * 24) + "px";
-      icon.style.left = (pos.x * 24) + "px";
+      icon.setAttribute('class', name);
+      var pos = findSpace();
+      icon.style.top = (pos.y * 24 + 2) + "px";
+      icon.style.left = (pos.x * 24 + 2) + "px";
       icons.appendChild(icon);
-    });
-    */
+    }
+    if (this.resource) {
+      addIcon(this.resource);
+    }
+    if (this.horse) {
+      addIcon('horse');
+    }
+    if (this.weapon) {
+      addIcon('weapon');
+    }
+    if (this.stockpile) {
+      addIcon('stockpile');
+    }
+
 
     if (this.iconsDiv) {
       this.div.replaceChild(icons, this.iconsDiv);
@@ -244,12 +267,42 @@ Engine('map', function (engine) {
   countries.choose = function () {
     return this[Math.floor(Math.random() * this.length)];
   };
-  people.choose = countries.choose;
-  engine.on('animate', function (delta) {
+  ['gold', 'gold', 'tree', 'tree', 'iron', 'iron',
+   'coal', 'coal', 'pasture', 'pasture', 'pasture'
+  ].forEach(function (resource) {
     var country = countries.choose();
-    country.setOwner(people.choose());
-    country.setCity(Math.random() > 0.5);
+    while (country.resource) {
+      country = countries.choose();
+    }
+    country.resource = resource;
+    country.renderIcons();
   });
+
+  people.choose = countries.choose;
+  setInterval(function () {
+    var country = countries.choose();
+    var person = people.choose();
+    if (country.owner === person) {
+      switch (Math.floor(Math.random() * 4)) {
+      case 0:
+        country.setCity(true);
+        break;
+      case 1:
+        country.setWeapon(true);
+        break;
+      case 2:
+        country.setHorse(true);
+        break;
+      case 3:
+        country.setStockpile(true);
+        break;
+      }
+      country.setCity(true);
+    } else {
+      country.setOwner(person);
+      country.setCity(false);
+    }
+  }, 100);
 
 
 });
