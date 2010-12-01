@@ -1,0 +1,894 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="320"
+   height="480"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.47 r22583"
+   sodipodi:docname="sprites.svg"
+   inkscape:export-filename="/home/tim/Desktop/node-camp/examples/hexius/web/background.png"
+   inkscape:export-xdpi="90"
+   inkscape:export-ydpi="90">
+  <defs
+     id="defs4">
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective10" />
+    <filter
+       inkscape:collect="always"
+       id="filter4210"
+       x="-0.2576748"
+       width="1.5153496"
+       y="-0.29713125"
+       height="1.5942625">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="4.9521875"
+         id="feGaussianBlur4212" />
+    </filter>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.70710678"
+     inkscape:cx="114.05531"
+     inkscape:cy="187.63294"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1600"
+     inkscape:window-height="851"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid2816"
+       empspacing="64"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-572.36218)">
+    <g
+       id="g4712"
+       inkscape:export-filename="/home/tim/Desktop/node-camp/examples/hexarmy/web/icon.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90"
+       transform="translate(-600,-200)">
+      <rect
+         y="814.36218"
+         x="446"
+         height="48"
+         width="48"
+         id="rect4710"
+         style="opacity:0.9504504;fill:#729fcf;fill-opacity:0;stroke:none" />
+    </g>
+    <g
+       id="g4632"
+       inkscape:export-filename="/home/tim/Desktop/node-camp/examples/hexius/web/sprites.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         sodipodi:nodetypes="ccccccc"
+         id="path3123"
+         d="m -2e-5,828.36218 -18.99999,32 -36,0 -18.99999,-32 18.99999,-32.00003 36,0 18.99999,32.00003 z"
+         style="fill:#204a87;fill-opacity:1;stroke:none" />
+      <path
+         id="path4148"
+         d="m -48.1875,808.375 22.375,0 11.875,20 -11.875,20 -22.375,0 -11.875,-20 11.875,-20 z"
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#3465a4;fill-opacity:1;stroke:none;stroke-width:24;marker:none;visibility:visible;display:inline;overflow:visible;filter:url(#filter4210);enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono" />
+      <path
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#729fcf;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono"
+         d="m -55,796.36218 -19,32 19,32 36,0 19,-32 -19,-32 -36,0 z m 1.125,2 33.75,0 17.8125,30 -17.84375,30 -33.6875,0 -17.84375,-30 17.8125,-30 z"
+         id="path4214" />
+    </g>
+    <g
+       id="g4627"
+       inkscape:export-filename="/home/tim/Desktop/node-camp/examples/hexius/web/sprites.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         style="fill:#5c3566;fill-opacity:1;stroke:none"
+         d="m -2e-5,764.36218 -18.99999,32 -36,0 -18.99999,-32 18.99999,-32.00003 36,0 18.99999,32.00003 z"
+         id="path4222"
+         sodipodi:nodetypes="ccccccc" />
+      <path
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#75507b;fill-opacity:1;stroke:none;stroke-width:24;marker:none;visibility:visible;display:inline;overflow:visible;filter:url(#filter4210);enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono"
+         d="m -48.1875,744.375 22.375,0 11.875,20 -11.875,20 -22.375,0 -11.875,-20 11.875,-20 z"
+         id="path4224" />
+      <path
+         id="path4226"
+         d="m -55,732.36218 -19,32 19,32 36,0 19,-32 -19,-32 -36,0 z m 1.125,2 33.75,0 17.8125,30 -17.84375,30 -33.6875,0 -17.84375,-30 17.8125,-30 z"
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#ad7fa8;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono" />
+    </g>
+    <g
+       id="g4642"
+       inkscape:export-filename="/home/tim/Desktop/node-camp/examples/hexius/web/sprites.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         style="fill:#4e9a06;fill-opacity:1;stroke:none"
+         d="m -2e-5,956.36218 -18.99999,32 -36,0 -18.99999,-32 18.99999,-32.00003 36,0 18.99999,32.00003 z"
+         id="path4228"
+         sodipodi:nodetypes="ccccccc" />
+      <path
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#73d216;fill-opacity:1;stroke:none;stroke-width:24;marker:none;visibility:visible;display:inline;overflow:visible;filter:url(#filter4210);enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono;opacity:1"
+         d="m -48.1875,936.375 22.375,0 11.875,20 -11.875,20 -22.375,0 -11.875,-20 11.875,-20 z"
+         id="path4230" />
+      <path
+         id="path4232"
+         d="m -55,924.36218 -19,32 19,32 36,0 19,-32 -19,-32 -36,0 z m 1.125,2 33.75,0 17.8125,30 -17.84375,30 -33.6875,0 -17.84375,-30 17.8125,-30 z"
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#8ae234;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono" />
+    </g>
+    <g
+       id="g4637"
+       inkscape:export-filename="/home/tim/Desktop/node-camp/examples/hexius/web/sprites.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         sodipodi:nodetypes="ccccccc"
+         id="path4234"
+         d="m -2e-5,892.36218 -18.99999,32 -36,0 -18.99999,-32 18.99999,-32.00003 36,0 18.99999,32.00003 z"
+         style="fill:#ce5c00;fill-opacity:1;stroke:none" />
+      <path
+         id="path4236"
+         d="m -48.1875,872.375 22.375,0 11.875,20 -11.875,20 -22.375,0 -11.875,-20 11.875,-20 z"
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#f57900;fill-opacity:1;stroke:none;stroke-width:24;marker:none;visibility:visible;display:inline;overflow:visible;filter:url(#filter4210);enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono" />
+      <path
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#fcaf3e;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono"
+         d="m -55,860.36218 -19,32 19,32 36,0 19,-32 -19,-32 -36,0 z m 1.125,2 33.75,0 17.8125,30 -17.84375,30 -33.6875,0 -17.84375,-30 17.8125,-30 z"
+         id="path4238" />
+    </g>
+    <g
+       id="g4647"
+       inkscape:export-filename="/home/tim/Desktop/node-camp/examples/hexius/web/sprites.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         sodipodi:nodetypes="ccccccc"
+         id="path4240"
+         d="m -2e-5,1020.3622 -18.99999,32 -36,0 -18.99999,-32 18.99999,-32.00005 36,0 18.99999,32.00005 z"
+         style="fill:#c4a000;fill-opacity:1;stroke:none" />
+      <path
+         id="path4242"
+         d="m -48.1875,1000.375 22.375,0 11.875,20 -11.875,20 -22.375,0 -11.875,-20 11.875,-20 z"
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#edd400;fill-opacity:1;stroke:none;stroke-width:24;marker:none;visibility:visible;display:inline;overflow:visible;filter:url(#filter4210);enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono" />
+      <path
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#fce94f;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono"
+         d="m -55,988.36218 -19,32.00002 19,32 36,0 19,-32 -19,-32.00002 -36,0 z m 1.125,2 33.75,0 17.8125,30.00002 -17.84375,30 -33.6875,0 -17.84375,-30 17.8125,-30.00002 z"
+         id="path4244" />
+    </g>
+    <g
+       id="g4622"
+       inkscape:export-filename="/home/tim/Desktop/node-camp/examples/hexius/web/sprites.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         style="fill:#8f5902;fill-opacity:1;stroke:none"
+         d="m -2e-5,700.36218 -18.99999,32 -36,0 -18.99999,-32 18.99999,-32.00003 36,0 18.99999,32.00003 z"
+         id="path4246"
+         sodipodi:nodetypes="ccccccc" />
+      <path
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#c17d11;fill-opacity:1;stroke:none;stroke-width:24;marker:none;visibility:visible;display:inline;overflow:visible;filter:url(#filter4210);enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono"
+         d="m -48.1875,680.375 22.375,0 11.875,20 -11.875,20 -22.375,0 -11.875,-20 11.875,-20 z"
+         id="path4248" />
+      <path
+         id="path4250"
+         d="m -55,668.36218 -19,32 19,32 36,0 19,-32 -19,-32 -36,0 z m 1.125,2 33.75,0 17.8125,30 -17.84375,30 -33.6875,0 -17.84375,-30 17.8125,-30 z"
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#e9b96e;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono" />
+    </g>
+    <g
+       id="g4617"
+       inkscape:export-filename="/home/tim/Desktop/node-camp/examples/hexius/web/sprites.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         sodipodi:nodetypes="ccccccc"
+         id="path4252"
+         d="m -2e-5,636.36218 -18.99999,32 -36,0 -18.99999,-32 18.99999,-32.00003 36,0 18.99999,32.00003 z"
+         style="fill:#a40000;fill-opacity:1;stroke:none" />
+      <path
+         id="path4254"
+         d="m -48.1875,616.375 22.375,0 11.875,20 -11.875,20 -22.375,0 -11.875,-20 11.875,-20 z"
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#cc0000;fill-opacity:1;stroke:none;stroke-width:24;marker:none;visibility:visible;display:inline;overflow:visible;filter:url(#filter4210);enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono" />
+      <path
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#ef2929;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono"
+         d="m -55,604.36218 -19,32 19,32 36,0 19,-32 -19,-32 -36,0 z m 1.125,2 33.75,0 17.8125,30 -17.84375,30 -33.6875,0 -17.84375,-30 17.8125,-30 z"
+         id="path4256" />
+    </g>
+    <g
+       id="g4702"
+       transform="matrix(0.64864865,0,0,0.64864865,-106,101.04618)"
+       inkscape:export-filename="/home/tim/Desktop/node-camp/examples/hexarmy/web/icon.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         style="fill:#204a87;fill-opacity:1;stroke:none"
+         d="m -2e-5,828.36218 -18.99999,32 -36,0 -18.99999,-32 18.99999,-32.00003 36,0 18.99999,32.00003 z"
+         id="path4704"
+         sodipodi:nodetypes="ccccccc" />
+      <path
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#729fcf;fill-opacity:1;stroke:none;stroke-width:24;marker:none;visibility:visible;display:inline;overflow:visible;filter:url(#filter4210);enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono"
+         d="m -48.1875,808.375 22.375,0 11.875,20 -11.875,20 -22.375,0 -11.875,-20 11.875,-20 z"
+         id="path4706" />
+      <path
+         id="path4708"
+         d="m -55,796.36218 -19,32 19,32 36,0 19,-32 -19,-32 -36,0 z m 1.125,2 33.75,0 17.8125,30 -17.84375,30 -33.6875,0 -17.84375,-30 17.8125,-30 z"
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#729fcf;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono" />
+    </g>
+    <g
+       id="g4781"
+       transform="translate(0,64)"
+       inkscape:export-filename="/home/tim/Desktop/node-camp/examples/hexius/web/background.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         style="opacity:0.8;fill:#888a85;fill-opacity:1;stroke:none"
+         d="m 86.99999,588.36218 -18.99999,32 -36,0 -18.99999,-32 L 32,556.36215 l 36,0 18.99999,32.00003 z"
+         id="path4783"
+         sodipodi:nodetypes="ccccccc" />
+      <path
+         id="path4785"
+         d="m 32,556.36218 -19,32 19,32 1.125,-2 0,-0.0312 -17.8125,-29.96875 17.8125,-30 0.0312,0 33.6875,0 0.03125,0 1.125,-2 -36,0 z"
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#2e3436;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono" />
+      <path
+         id="path4787"
+         d="m 68,556.36218 -1.125,2 17.8125,30 -17.84375,30 -33.6875,0 -0.0312,-0.0312 -1.125,2.03125 36,0 19,-32 -19,-32 z"
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#babdb6;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono" />
+    </g>
+    <g
+       id="g4789"
+       transform="translate(0,128)"
+       inkscape:export-filename="/home/tim/Desktop/node-camp/examples/hexius/web/background.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         style="opacity:0.8;fill:#888a85;fill-opacity:1;stroke:none"
+         d="m 86.99999,588.36218 -18.99999,32 -36,0 -18.99999,-32 L 32,556.36215 l 36,0 18.99999,32.00003 z"
+         id="path4791"
+         sodipodi:nodetypes="ccccccc" />
+      <path
+         id="path4793"
+         d="m 32,556.36218 -19,32 19,32 1.125,-2 0,-0.0312 -17.8125,-29.96875 17.8125,-30 0.0312,0 33.6875,0 0.03125,0 1.125,-2 -36,0 z"
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#2e3436;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono" />
+      <path
+         id="path4795"
+         d="m 68,556.36218 -1.125,2 17.8125,30 -17.84375,30 -33.6875,0 -0.0312,-0.0312 -1.125,2.03125 36,0 19,-32 -19,-32 z"
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#babdb6;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono" />
+    </g>
+    <g
+       transform="translate(0,192)"
+       id="g4797"
+       inkscape:export-filename="/home/tim/Desktop/node-camp/examples/hexius/web/background.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         sodipodi:nodetypes="ccccccc"
+         id="path4799"
+         d="m 86.99999,588.36218 -18.99999,32 -36,0 -18.99999,-32 L 32,556.36215 l 36,0 18.99999,32.00003 z"
+         style="opacity:0.8;fill:#888a85;fill-opacity:1;stroke:none" />
+      <path
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#2e3436;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono"
+         d="m 32,556.36218 -19,32 19,32 1.125,-2 0,-0.0312 -17.8125,-29.96875 17.8125,-30 0.0312,0 33.6875,0 0.03125,0 1.125,-2 -36,0 z"
+         id="path4801" />
+      <path
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#babdb6;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono"
+         d="m 68,556.36218 -1.125,2 17.8125,30 -17.84375,30 -33.6875,0 -0.0312,-0.0312 -1.125,2.03125 36,0 19,-32 -19,-32 z"
+         id="path4803" />
+    </g>
+    <g
+       id="g4805"
+       transform="translate(0,256)"
+       inkscape:export-filename="/home/tim/Desktop/node-camp/examples/hexius/web/background.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         style="opacity:0.8;fill:#888a85;fill-opacity:1;stroke:none"
+         d="m 86.99999,588.36218 -18.99999,32 -36,0 -18.99999,-32 L 32,556.36215 l 36,0 18.99999,32.00003 z"
+         id="path4807"
+         sodipodi:nodetypes="ccccccc" />
+      <path
+         id="path4809"
+         d="m 32,556.36218 -19,32 19,32 1.125,-2 0,-0.0312 -17.8125,-29.96875 17.8125,-30 0.0312,0 33.6875,0 0.03125,0 1.125,-2 -36,0 z"
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#2e3436;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono" />
+      <path
+         id="path4811"
+         d="m 68,556.36218 -1.125,2 17.8125,30 -17.84375,30 -33.6875,0 -0.0312,-0.0312 -1.125,2.03125 36,0 19,-32 -19,-32 z"
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#babdb6;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono" />
+    </g>
+    <g
+       transform="translate(0,320)"
+       id="g4813"
+       inkscape:export-filename="/home/tim/Desktop/node-camp/examples/hexius/web/background.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         sodipodi:nodetypes="ccccccc"
+         id="path4815"
+         d="m 86.99999,588.36218 -18.99999,32 -36,0 -18.99999,-32 L 32,556.36215 l 36,0 18.99999,32.00003 z"
+         style="opacity:0.8;fill:#888a85;fill-opacity:1;stroke:none" />
+      <path
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#2e3436;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono"
+         d="m 32,556.36218 -19,32 19,32 1.125,-2 0,-0.0312 -17.8125,-29.96875 17.8125,-30 0.0312,0 33.6875,0 0.03125,0 1.125,-2 -36,0 z"
+         id="path4817" />
+      <path
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#babdb6;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono"
+         d="m 68,556.36218 -1.125,2 17.8125,30 -17.84375,30 -33.6875,0 -0.0312,-0.0312 -1.125,2.03125 36,0 19,-32 -19,-32 z"
+         id="path4819" />
+    </g>
+    <g
+       transform="translate(0,384)"
+       id="g4821"
+       inkscape:export-filename="/home/tim/Desktop/node-camp/examples/hexius/web/background.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         sodipodi:nodetypes="ccccccc"
+         id="path4823"
+         d="m 86.99999,588.36218 -18.99999,32 -36,0 -18.99999,-32 L 32,556.36215 l 36,0 18.99999,32.00003 z"
+         style="opacity:0.8;fill:#888a85;fill-opacity:1;stroke:none" />
+      <path
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#2e3436;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono"
+         d="m 32,556.36218 -19,32 19,32 1.125,-2 0,-0.0312 -17.8125,-29.96875 17.8125,-30 0.0312,0 33.6875,0 0.03125,0 1.125,-2 -36,0 z"
+         id="path4825" />
+      <path
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#babdb6;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono"
+         d="m 68,556.36218 -1.125,2 17.8125,30 -17.84375,30 -33.6875,0 -0.0312,-0.0312 -1.125,2.03125 36,0 19,-32 -19,-32 z"
+         id="path4827" />
+    </g>
+    <g
+       transform="translate(55,32)"
+       id="g4845"
+       inkscape:export-filename="/home/tim/Desktop/node-camp/examples/hexius/web/background.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         sodipodi:nodetypes="ccccccc"
+         id="path4847"
+         d="m 86.99999,588.36218 -18.99999,32 -36,0 -18.99999,-32 L 32,556.36215 l 36,0 18.99999,32.00003 z"
+         style="opacity:0.8;fill:#888a85;fill-opacity:1;stroke:none" />
+      <path
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#2e3436;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono"
+         d="m 32,556.36218 -19,32 19,32 1.125,-2 0,-0.0312 -17.8125,-29.96875 17.8125,-30 0.0312,0 33.6875,0 0.03125,0 1.125,-2 -36,0 z"
+         id="path4849" />
+      <path
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#babdb6;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono"
+         d="m 68,556.36218 -1.125,2 17.8125,30 -17.84375,30 -33.6875,0 -0.0312,-0.0312 -1.125,2.03125 36,0 19,-32 -19,-32 z"
+         id="path4851" />
+    </g>
+    <g
+       transform="translate(55,96)"
+       id="g4853"
+       inkscape:export-filename="/home/tim/Desktop/node-camp/examples/hexius/web/background.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         sodipodi:nodetypes="ccccccc"
+         id="path4855"
+         d="m 86.99999,588.36218 -18.99999,32 -36,0 -18.99999,-32 L 32,556.36215 l 36,0 18.99999,32.00003 z"
+         style="opacity:0.8;fill:#888a85;fill-opacity:1;stroke:none" />
+      <path
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#2e3436;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono"
+         d="m 32,556.36218 -19,32 19,32 1.125,-2 0,-0.0312 -17.8125,-29.96875 17.8125,-30 0.0312,0 33.6875,0 0.03125,0 1.125,-2 -36,0 z"
+         id="path4857" />
+      <path
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#babdb6;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono"
+         d="m 68,556.36218 -1.125,2 17.8125,30 -17.84375,30 -33.6875,0 -0.0312,-0.0312 -1.125,2.03125 36,0 19,-32 -19,-32 z"
+         id="path4859" />
+    </g>
+    <g
+       id="g4861"
+       transform="translate(55,160)"
+       inkscape:export-filename="/home/tim/Desktop/node-camp/examples/hexius/web/background.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         style="opacity:0.8;fill:#888a85;fill-opacity:1;stroke:none"
+         d="m 86.99999,588.36218 -18.99999,32 -36,0 -18.99999,-32 L 32,556.36215 l 36,0 18.99999,32.00003 z"
+         id="path4863"
+         sodipodi:nodetypes="ccccccc" />
+      <path
+         id="path4865"
+         d="m 32,556.36218 -19,32 19,32 1.125,-2 0,-0.0312 -17.8125,-29.96875 17.8125,-30 0.0312,0 33.6875,0 0.03125,0 1.125,-2 -36,0 z"
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#2e3436;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono" />
+      <path
+         id="path4867"
+         d="m 68,556.36218 -1.125,2 17.8125,30 -17.84375,30 -33.6875,0 -0.0312,-0.0312 -1.125,2.03125 36,0 19,-32 -19,-32 z"
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#babdb6;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono" />
+    </g>
+    <g
+       transform="translate(55,224)"
+       id="g4869"
+       inkscape:export-filename="/home/tim/Desktop/node-camp/examples/hexius/web/background.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         sodipodi:nodetypes="ccccccc"
+         id="path4871"
+         d="m 86.99999,588.36218 -18.99999,32 -36,0 -18.99999,-32 L 32,556.36215 l 36,0 18.99999,32.00003 z"
+         style="opacity:0.8;fill:#888a85;fill-opacity:1;stroke:none" />
+      <path
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#2e3436;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono"
+         d="m 32,556.36218 -19,32 19,32 1.125,-2 0,-0.0312 -17.8125,-29.96875 17.8125,-30 0.0312,0 33.6875,0 0.03125,0 1.125,-2 -36,0 z"
+         id="path4873" />
+      <path
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#babdb6;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono"
+         d="m 68,556.36218 -1.125,2 17.8125,30 -17.84375,30 -33.6875,0 -0.0312,-0.0312 -1.125,2.03125 36,0 19,-32 -19,-32 z"
+         id="path4875" />
+    </g>
+    <g
+       id="g4877"
+       transform="translate(55,288)"
+       inkscape:export-filename="/home/tim/Desktop/node-camp/examples/hexius/web/background.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         style="opacity:0.8;fill:#888a85;fill-opacity:1;stroke:none"
+         d="m 86.99999,588.36218 -18.99999,32 -36,0 -18.99999,-32 L 32,556.36215 l 36,0 18.99999,32.00003 z"
+         id="path4879"
+         sodipodi:nodetypes="ccccccc" />
+      <path
+         id="path4881"
+         d="m 32,556.36218 -19,32 19,32 1.125,-2 0,-0.0312 -17.8125,-29.96875 17.8125,-30 0.0312,0 33.6875,0 0.03125,0 1.125,-2 -36,0 z"
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#2e3436;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono" />
+      <path
+         id="path4883"
+         d="m 68,556.36218 -1.125,2 17.8125,30 -17.84375,30 -33.6875,0 -0.0312,-0.0312 -1.125,2.03125 36,0 19,-32 -19,-32 z"
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#babdb6;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono" />
+    </g>
+    <g
+       id="g4885"
+       transform="translate(55,352)"
+       inkscape:export-filename="/home/tim/Desktop/node-camp/examples/hexius/web/background.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         style="opacity:0.8;fill:#888a85;fill-opacity:1;stroke:none"
+         d="m 86.99999,588.36218 -18.99999,32 -36,0 -18.99999,-32 L 32,556.36215 l 36,0 18.99999,32.00003 z"
+         id="path4887"
+         sodipodi:nodetypes="ccccccc" />
+      <path
+         id="path4889"
+         d="m 32,556.36218 -19,32 19,32 1.125,-2 0,-0.0312 -17.8125,-29.96875 17.8125,-30 0.0312,0 33.6875,0 0.03125,0 1.125,-2 -36,0 z"
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#2e3436;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono" />
+      <path
+         id="path4891"
+         d="m 68,556.36218 -1.125,2 17.8125,30 -17.84375,30 -33.6875,0 -0.0312,-0.0312 -1.125,2.03125 36,0 19,-32 -19,-32 z"
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#babdb6;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono" />
+    </g>
+    <g
+       transform="translate(55,416)"
+       id="g4893"
+       inkscape:export-filename="/home/tim/Desktop/node-camp/examples/hexius/web/background.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         sodipodi:nodetypes="ccccccc"
+         id="path4895"
+         d="m 86.99999,588.36218 -18.99999,32 -36,0 -18.99999,-32 L 32,556.36215 l 36,0 18.99999,32.00003 z"
+         style="opacity:0.8;fill:#888a85;fill-opacity:1;stroke:none" />
+      <path
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#2e3436;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono"
+         d="m 32,556.36218 -19,32 19,32 1.125,-2 0,-0.0312 -17.8125,-29.96875 17.8125,-30 0.0312,0 33.6875,0 0.03125,0 1.125,-2 -36,0 z"
+         id="path4897" />
+      <path
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#babdb6;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono"
+         d="m 68,556.36218 -1.125,2 17.8125,30 -17.84375,30 -33.6875,0 -0.0312,-0.0312 -1.125,2.03125 36,0 19,-32 -19,-32 z"
+         id="path4899" />
+    </g>
+    <g
+       transform="translate(110,64)"
+       id="g4909"
+       inkscape:export-filename="/home/tim/Desktop/node-camp/examples/hexius/web/background.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         sodipodi:nodetypes="ccccccc"
+         id="path4911"
+         d="m 86.99999,588.36218 -18.99999,32 -36,0 -18.99999,-32 L 32,556.36215 l 36,0 18.99999,32.00003 z"
+         style="opacity:0.8;fill:#888a85;fill-opacity:1;stroke:none" />
+      <path
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#2e3436;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono"
+         d="m 32,556.36218 -19,32 19,32 1.125,-2 0,-0.0312 -17.8125,-29.96875 17.8125,-30 0.0312,0 33.6875,0 0.03125,0 1.125,-2 -36,0 z"
+         id="path4913" />
+      <path
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#babdb6;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono"
+         d="m 68,556.36218 -1.125,2 17.8125,30 -17.84375,30 -33.6875,0 -0.0312,-0.0312 -1.125,2.03125 36,0 19,-32 -19,-32 z"
+         id="path4915" />
+    </g>
+    <g
+       transform="translate(110,128)"
+       id="g4917"
+       inkscape:export-filename="/home/tim/Desktop/node-camp/examples/hexius/web/background.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         sodipodi:nodetypes="ccccccc"
+         id="path4919"
+         d="m 86.99999,588.36218 -18.99999,32 -36,0 -18.99999,-32 L 32,556.36215 l 36,0 18.99999,32.00003 z"
+         style="opacity:0.8;fill:#888a85;fill-opacity:1;stroke:none" />
+      <path
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#2e3436;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono"
+         d="m 32,556.36218 -19,32 19,32 1.125,-2 0,-0.0312 -17.8125,-29.96875 17.8125,-30 0.0312,0 33.6875,0 0.03125,0 1.125,-2 -36,0 z"
+         id="path4921" />
+      <path
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#babdb6;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono"
+         d="m 68,556.36218 -1.125,2 17.8125,30 -17.84375,30 -33.6875,0 -0.0312,-0.0312 -1.125,2.03125 36,0 19,-32 -19,-32 z"
+         id="path4923" />
+    </g>
+    <g
+       id="g4925"
+       transform="translate(110,192)"
+       inkscape:export-filename="/home/tim/Desktop/node-camp/examples/hexius/web/background.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         style="opacity:0.8;fill:#888a85;fill-opacity:1;stroke:none"
+         d="m 86.99999,588.36218 -18.99999,32 -36,0 -18.99999,-32 L 32,556.36215 l 36,0 18.99999,32.00003 z"
+         id="path4927"
+         sodipodi:nodetypes="ccccccc" />
+      <path
+         id="path4929"
+         d="m 32,556.36218 -19,32 19,32 1.125,-2 0,-0.0312 -17.8125,-29.96875 17.8125,-30 0.0312,0 33.6875,0 0.03125,0 1.125,-2 -36,0 z"
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#2e3436;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono" />
+      <path
+         id="path4931"
+         d="m 68,556.36218 -1.125,2 17.8125,30 -17.84375,30 -33.6875,0 -0.0312,-0.0312 -1.125,2.03125 36,0 19,-32 -19,-32 z"
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#babdb6;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono" />
+    </g>
+    <g
+       transform="translate(110,256)"
+       id="g4933"
+       inkscape:export-filename="/home/tim/Desktop/node-camp/examples/hexius/web/background.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         sodipodi:nodetypes="ccccccc"
+         id="path4935"
+         d="m 86.99999,588.36218 -18.99999,32 -36,0 -18.99999,-32 L 32,556.36215 l 36,0 18.99999,32.00003 z"
+         style="opacity:0.8;fill:#888a85;fill-opacity:1;stroke:none" />
+      <path
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#2e3436;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono"
+         d="m 32,556.36218 -19,32 19,32 1.125,-2 0,-0.0312 -17.8125,-29.96875 17.8125,-30 0.0312,0 33.6875,0 0.03125,0 1.125,-2 -36,0 z"
+         id="path4937" />
+      <path
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#babdb6;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono"
+         d="m 68,556.36218 -1.125,2 17.8125,30 -17.84375,30 -33.6875,0 -0.0312,-0.0312 -1.125,2.03125 36,0 19,-32 -19,-32 z"
+         id="path4939" />
+    </g>
+    <g
+       id="g4941"
+       transform="translate(110,320)"
+       inkscape:export-filename="/home/tim/Desktop/node-camp/examples/hexius/web/background.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         style="opacity:0.8;fill:#888a85;fill-opacity:1;stroke:none"
+         d="m 86.99999,588.36218 -18.99999,32 -36,0 -18.99999,-32 L 32,556.36215 l 36,0 18.99999,32.00003 z"
+         id="path4943"
+         sodipodi:nodetypes="ccccccc" />
+      <path
+         id="path4945"
+         d="m 32,556.36218 -19,32 19,32 1.125,-2 0,-0.0312 -17.8125,-29.96875 17.8125,-30 0.0312,0 33.6875,0 0.03125,0 1.125,-2 -36,0 z"
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#2e3436;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono" />
+      <path
+         id="path4947"
+         d="m 68,556.36218 -1.125,2 17.8125,30 -17.84375,30 -33.6875,0 -0.0312,-0.0312 -1.125,2.03125 36,0 19,-32 -19,-32 z"
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#babdb6;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono" />
+    </g>
+    <g
+       id="g4949"
+       transform="translate(110,384)"
+       inkscape:export-filename="/home/tim/Desktop/node-camp/examples/hexius/web/background.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         style="opacity:0.8;fill:#888a85;fill-opacity:1;stroke:none"
+         d="m 86.99999,588.36218 -18.99999,32 -36,0 -18.99999,-32 L 32,556.36215 l 36,0 18.99999,32.00003 z"
+         id="path4951"
+         sodipodi:nodetypes="ccccccc" />
+      <path
+         id="path4953"
+         d="m 32,556.36218 -19,32 19,32 1.125,-2 0,-0.0312 -17.8125,-29.96875 17.8125,-30 0.0312,0 33.6875,0 0.03125,0 1.125,-2 -36,0 z"
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#2e3436;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono" />
+      <path
+         id="path4955"
+         d="m 68,556.36218 -1.125,2 17.8125,30 -17.84375,30 -33.6875,0 -0.0312,-0.0312 -1.125,2.03125 36,0 19,-32 -19,-32 z"
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#babdb6;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono" />
+    </g>
+    <g
+       id="g4973"
+       transform="translate(165,32)"
+       inkscape:export-filename="/home/tim/Desktop/node-camp/examples/hexius/web/background.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         style="opacity:0.8;fill:#888a85;fill-opacity:1;stroke:none"
+         d="m 86.99999,588.36218 -18.99999,32 -36,0 -18.99999,-32 L 32,556.36215 l 36,0 18.99999,32.00003 z"
+         id="path4975"
+         sodipodi:nodetypes="ccccccc" />
+      <path
+         id="path4977"
+         d="m 32,556.36218 -19,32 19,32 1.125,-2 0,-0.0312 -17.8125,-29.96875 17.8125,-30 0.0312,0 33.6875,0 0.03125,0 1.125,-2 -36,0 z"
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#2e3436;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono" />
+      <path
+         id="path4979"
+         d="m 68,556.36218 -1.125,2 17.8125,30 -17.84375,30 -33.6875,0 -0.0312,-0.0312 -1.125,2.03125 36,0 19,-32 -19,-32 z"
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#babdb6;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono" />
+    </g>
+    <g
+       id="g4981"
+       transform="translate(165,96)"
+       inkscape:export-filename="/home/tim/Desktop/node-camp/examples/hexius/web/background.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         style="opacity:0.8;fill:#888a85;fill-opacity:1;stroke:none"
+         d="m 86.99999,588.36218 -18.99999,32 -36,0 -18.99999,-32 L 32,556.36215 l 36,0 18.99999,32.00003 z"
+         id="path4983"
+         sodipodi:nodetypes="ccccccc" />
+      <path
+         id="path4985"
+         d="m 32,556.36218 -19,32 19,32 1.125,-2 0,-0.0312 -17.8125,-29.96875 17.8125,-30 0.0312,0 33.6875,0 0.03125,0 1.125,-2 -36,0 z"
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#2e3436;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono" />
+      <path
+         id="path4987"
+         d="m 68,556.36218 -1.125,2 17.8125,30 -17.84375,30 -33.6875,0 -0.0312,-0.0312 -1.125,2.03125 36,0 19,-32 -19,-32 z"
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#babdb6;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono" />
+    </g>
+    <g
+       transform="translate(165,160)"
+       id="g4989"
+       inkscape:export-filename="/home/tim/Desktop/node-camp/examples/hexius/web/background.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         sodipodi:nodetypes="ccccccc"
+         id="path4991"
+         d="m 86.99999,588.36218 -18.99999,32 -36,0 -18.99999,-32 L 32,556.36215 l 36,0 18.99999,32.00003 z"
+         style="opacity:0.8;fill:#888a85;fill-opacity:1;stroke:none" />
+      <path
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#2e3436;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono"
+         d="m 32,556.36218 -19,32 19,32 1.125,-2 0,-0.0312 -17.8125,-29.96875 17.8125,-30 0.0312,0 33.6875,0 0.03125,0 1.125,-2 -36,0 z"
+         id="path4993" />
+      <path
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#babdb6;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono"
+         d="m 68,556.36218 -1.125,2 17.8125,30 -17.84375,30 -33.6875,0 -0.0312,-0.0312 -1.125,2.03125 36,0 19,-32 -19,-32 z"
+         id="path4995" />
+    </g>
+    <g
+       id="g4997"
+       transform="translate(165,224)"
+       inkscape:export-filename="/home/tim/Desktop/node-camp/examples/hexius/web/background.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         style="opacity:0.8;fill:#888a85;fill-opacity:1;stroke:none"
+         d="m 86.99999,588.36218 -18.99999,32 -36,0 -18.99999,-32 L 32,556.36215 l 36,0 18.99999,32.00003 z"
+         id="path4999"
+         sodipodi:nodetypes="ccccccc" />
+      <path
+         id="path5001"
+         d="m 32,556.36218 -19,32 19,32 1.125,-2 0,-0.0312 -17.8125,-29.96875 17.8125,-30 0.0312,0 33.6875,0 0.03125,0 1.125,-2 -36,0 z"
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#2e3436;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono" />
+      <path
+         id="path5003"
+         d="m 68,556.36218 -1.125,2 17.8125,30 -17.84375,30 -33.6875,0 -0.0312,-0.0312 -1.125,2.03125 36,0 19,-32 -19,-32 z"
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#babdb6;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono" />
+    </g>
+    <g
+       transform="translate(165,288)"
+       id="g5005"
+       inkscape:export-filename="/home/tim/Desktop/node-camp/examples/hexius/web/background.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         sodipodi:nodetypes="ccccccc"
+         id="path5007"
+         d="m 86.99999,588.36218 -18.99999,32 -36,0 -18.99999,-32 L 32,556.36215 l 36,0 18.99999,32.00003 z"
+         style="opacity:0.8;fill:#888a85;fill-opacity:1;stroke:none" />
+      <path
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#2e3436;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono"
+         d="m 32,556.36218 -19,32 19,32 1.125,-2 0,-0.0312 -17.8125,-29.96875 17.8125,-30 0.0312,0 33.6875,0 0.03125,0 1.125,-2 -36,0 z"
+         id="path5009" />
+      <path
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#babdb6;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono"
+         d="m 68,556.36218 -1.125,2 17.8125,30 -17.84375,30 -33.6875,0 -0.0312,-0.0312 -1.125,2.03125 36,0 19,-32 -19,-32 z"
+         id="path5011" />
+    </g>
+    <g
+       transform="translate(165,352)"
+       id="g5013"
+       inkscape:export-filename="/home/tim/Desktop/node-camp/examples/hexius/web/background.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         sodipodi:nodetypes="ccccccc"
+         id="path5015"
+         d="m 86.99999,588.36218 -18.99999,32 -36,0 -18.99999,-32 L 32,556.36215 l 36,0 18.99999,32.00003 z"
+         style="opacity:0.8;fill:#888a85;fill-opacity:1;stroke:none" />
+      <path
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#2e3436;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono"
+         d="m 32,556.36218 -19,32 19,32 1.125,-2 0,-0.0312 -17.8125,-29.96875 17.8125,-30 0.0312,0 33.6875,0 0.03125,0 1.125,-2 -36,0 z"
+         id="path5017" />
+      <path
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#babdb6;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono"
+         d="m 68,556.36218 -1.125,2 17.8125,30 -17.84375,30 -33.6875,0 -0.0312,-0.0312 -1.125,2.03125 36,0 19,-32 -19,-32 z"
+         id="path5019" />
+    </g>
+    <g
+       id="g5021"
+       transform="translate(165,416)"
+       inkscape:export-filename="/home/tim/Desktop/node-camp/examples/hexius/web/background.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         style="opacity:0.8;fill:#888a85;fill-opacity:1;stroke:none"
+         d="m 86.99999,588.36218 -18.99999,32 -36,0 -18.99999,-32 L 32,556.36215 l 36,0 18.99999,32.00003 z"
+         id="path5023"
+         sodipodi:nodetypes="ccccccc" />
+      <path
+         id="path5025"
+         d="m 32,556.36218 -19,32 19,32 1.125,-2 0,-0.0312 -17.8125,-29.96875 17.8125,-30 0.0312,0 33.6875,0 0.03125,0 1.125,-2 -36,0 z"
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#2e3436;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono" />
+      <path
+         id="path5027"
+         d="m 68,556.36218 -1.125,2 17.8125,30 -17.84375,30 -33.6875,0 -0.0312,-0.0312 -1.125,2.03125 36,0 19,-32 -19,-32 z"
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#babdb6;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono" />
+    </g>
+    <g
+       id="g5037"
+       transform="translate(220,64)"
+       inkscape:export-filename="/home/tim/Desktop/node-camp/examples/hexius/web/background.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         style="opacity:0.8;fill:#888a85;fill-opacity:1;stroke:none"
+         d="m 86.99999,588.36218 -18.99999,32 -36,0 -18.99999,-32 L 32,556.36215 l 36,0 18.99999,32.00003 z"
+         id="path5039"
+         sodipodi:nodetypes="ccccccc" />
+      <path
+         id="path5041"
+         d="m 32,556.36218 -19,32 19,32 1.125,-2 0,-0.0312 -17.8125,-29.96875 17.8125,-30 0.0312,0 33.6875,0 0.03125,0 1.125,-2 -36,0 z"
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#2e3436;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono" />
+      <path
+         id="path5043"
+         d="m 68,556.36218 -1.125,2 17.8125,30 -17.84375,30 -33.6875,0 -0.0312,-0.0312 -1.125,2.03125 36,0 19,-32 -19,-32 z"
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#babdb6;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono" />
+    </g>
+    <g
+       id="g5045"
+       transform="translate(220,128)"
+       inkscape:export-filename="/home/tim/Desktop/node-camp/examples/hexius/web/background.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         style="opacity:0.8;fill:#888a85;fill-opacity:1;stroke:none"
+         d="m 86.99999,588.36218 -18.99999,32 -36,0 -18.99999,-32 L 32,556.36215 l 36,0 18.99999,32.00003 z"
+         id="path5047"
+         sodipodi:nodetypes="ccccccc" />
+      <path
+         id="path5049"
+         d="m 32,556.36218 -19,32 19,32 1.125,-2 0,-0.0312 -17.8125,-29.96875 17.8125,-30 0.0312,0 33.6875,0 0.03125,0 1.125,-2 -36,0 z"
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#2e3436;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono" />
+      <path
+         id="path5051"
+         d="m 68,556.36218 -1.125,2 17.8125,30 -17.84375,30 -33.6875,0 -0.0312,-0.0312 -1.125,2.03125 36,0 19,-32 -19,-32 z"
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#babdb6;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono" />
+    </g>
+    <g
+       transform="translate(220,192)"
+       id="g5053"
+       inkscape:export-filename="/home/tim/Desktop/node-camp/examples/hexius/web/background.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         sodipodi:nodetypes="ccccccc"
+         id="path5055"
+         d="m 86.99999,588.36218 -18.99999,32 -36,0 -18.99999,-32 L 32,556.36215 l 36,0 18.99999,32.00003 z"
+         style="opacity:0.8;fill:#888a85;fill-opacity:1;stroke:none" />
+      <path
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#2e3436;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono"
+         d="m 32,556.36218 -19,32 19,32 1.125,-2 0,-0.0312 -17.8125,-29.96875 17.8125,-30 0.0312,0 33.6875,0 0.03125,0 1.125,-2 -36,0 z"
+         id="path5057" />
+      <path
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#babdb6;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono"
+         d="m 68,556.36218 -1.125,2 17.8125,30 -17.84375,30 -33.6875,0 -0.0312,-0.0312 -1.125,2.03125 36,0 19,-32 -19,-32 z"
+         id="path5059" />
+    </g>
+    <g
+       id="g5061"
+       transform="translate(220,256)"
+       inkscape:export-filename="/home/tim/Desktop/node-camp/examples/hexius/web/background.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         style="opacity:0.8;fill:#888a85;fill-opacity:1;stroke:none"
+         d="m 86.99999,588.36218 -18.99999,32 -36,0 -18.99999,-32 L 32,556.36215 l 36,0 18.99999,32.00003 z"
+         id="path5063"
+         sodipodi:nodetypes="ccccccc" />
+      <path
+         id="path5065"
+         d="m 32,556.36218 -19,32 19,32 1.125,-2 0,-0.0312 -17.8125,-29.96875 17.8125,-30 0.0312,0 33.6875,0 0.03125,0 1.125,-2 -36,0 z"
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#2e3436;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono" />
+      <path
+         id="path5067"
+         d="m 68,556.36218 -1.125,2 17.8125,30 -17.84375,30 -33.6875,0 -0.0312,-0.0312 -1.125,2.03125 36,0 19,-32 -19,-32 z"
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#babdb6;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono" />
+    </g>
+    <g
+       transform="translate(220,320)"
+       id="g5069"
+       inkscape:export-filename="/home/tim/Desktop/node-camp/examples/hexius/web/background.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         sodipodi:nodetypes="ccccccc"
+         id="path5071"
+         d="m 86.99999,588.36218 -18.99999,32 -36,0 -18.99999,-32 L 32,556.36215 l 36,0 18.99999,32.00003 z"
+         style="opacity:0.8;fill:#888a85;fill-opacity:1;stroke:none" />
+      <path
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#2e3436;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono"
+         d="m 32,556.36218 -19,32 19,32 1.125,-2 0,-0.0312 -17.8125,-29.96875 17.8125,-30 0.0312,0 33.6875,0 0.03125,0 1.125,-2 -36,0 z"
+         id="path5073" />
+      <path
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#babdb6;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono"
+         d="m 68,556.36218 -1.125,2 17.8125,30 -17.84375,30 -33.6875,0 -0.0312,-0.0312 -1.125,2.03125 36,0 19,-32 -19,-32 z"
+         id="path5075" />
+    </g>
+    <g
+       transform="translate(220,384)"
+       id="g5077"
+       inkscape:export-filename="/home/tim/Desktop/node-camp/examples/hexius/web/background.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
+      <path
+         sodipodi:nodetypes="ccccccc"
+         id="path5079"
+         d="m 86.99999,588.36218 -18.99999,32 -36,0 -18.99999,-32 L 32,556.36215 l 36,0 18.99999,32.00003 z"
+         style="opacity:0.8;fill:#888a85;fill-opacity:1;stroke:none" />
+      <path
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#2e3436;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono"
+         d="m 32,556.36218 -19,32 19,32 1.125,-2 0,-0.0312 -17.8125,-29.96875 17.8125,-30 0.0312,0 33.6875,0 0.03125,0 1.125,-2 -36,0 z"
+         id="path5081" />
+      <path
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#babdb6;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono"
+         d="m 68,556.36218 -1.125,2 17.8125,30 -17.84375,30 -33.6875,0 -0.0312,-0.0312 -1.125,2.03125 36,0 19,-32 -19,-32 z"
+         id="path5083" />
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,30 @@
+html, body {
+  background: #000 url(wallpapers/07.jpg) center no-repeat;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+#board {
+  background: url(board.png) center no-repeat;
+  position: absolute;
+  width: 294px;
+  height: 448px;
+  left: 50%;
+  top: 50%;
+  margin: -224px 0 0 -147px;
+}
+#board div {
+  position: absolute;
+  background-image: url(sprites.png);
+  width: 74px;
+  height: 64px;
+}
+#board .red { background-position: 0px 448px; }
+#board .brown { background-position: 0px 384px; }
+#board .purple { background-position: 0px 320px; }
+#board .blue { background-position: 0px 256px; }
+#board .orange { background-position: 0px 192px; }
+#board .green { background-position: 0px 128px; }
+#board .yellow { background-position: 0px 64px; }
+

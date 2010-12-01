@@ -1,0 +1,9 @@
+{
+	"id": "com.creationix.canvasclock",
+	"version": "1.0.2",
+	"vendor": "Creationix",
+	"type": "web",
+	"main": "index.html",
+	"title": "CanvasClock",
+	"icon": "icon.png"
+}

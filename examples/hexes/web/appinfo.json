@@ -1,0 +1,9 @@
+{
+  "id": "org.nodejs.camp.hexes",
+  "version": "1.0.0",
+  "vendor": "Node Camp",
+  "type": "web",
+  "main": "index.html",
+  "title": "Hexes",
+  "icon": "icon.png"
+}
