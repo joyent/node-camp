@@ -13,7 +13,7 @@ html, body {
   overflow: hidden;
   width: 320px;
   height: 480px;
-  background: #000 url(background.jpg);
+  background: #000 url(background.png);
   margin: -240px 0 0 -160px;
   -webkit-box-shadow: 10px 5px 5px black;
 }
