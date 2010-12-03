@@ -6,8 +6,33 @@ var colors = ['space', 'red', 'brown', 'purple', 'blue', 'orange',
 var socket = new io.Socket(); 
 socket.connect();
 
-socket.on('connect', function () {
-  console.log("Connected");
+var pieces = {};
+
+var Commands = {
+  map: function (map) {
+    map.forEach(function (column, x) {
+      column.forEach(function (id, y) {
+        if (id) {
+          var piece = new Piece(x, y, id);
+        }
+      });
+    });
+  },
+  move: function (params) {
+    pieces[params.id].moveTo(params.x, params.y);
+  }
+};
+
+
+socket.on('message', function (message) {
+  console.log("message", message);
+  Object.keys(message).forEach(function (command) {
+    if (Commands.hasOwnProperty(command)) {
+      Commands[command](message[command]);
+    } else {
+      console.error("Invalid command " + command);
+    }
+  });
 });
 
 // Singleton selection sprite
@@ -53,10 +78,15 @@ Space.prototype.onClick = function (evt) {
 function Piece(x, y, colorCode) {
   Tile.call(this, x, y, colorCode);
   this.id = colorCode;
+  pieces[colorCode] = this;
 }
 
 Piece.prototype.onClick = function (evt) {
   new Selection(this);
+};
+Piece.prototype.destroy = function () {
+  delete pieces[this.id];
+  Tile.prototype.destroy.call(this);
 };
 
 // Set up inheritance
@@ -70,6 +100,3 @@ for (var x = 0; x < 5; x++) {
     new Space(x, y);
   }
 }
-new Piece(1, 0, 1);
-new Piece(3, 1, 2);
-new Piece(1, 2, 3);
