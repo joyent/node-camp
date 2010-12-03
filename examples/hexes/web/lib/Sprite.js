@@ -24,7 +24,7 @@ Sprite.prototype.setTransform = function (x, y) {
 // Move the sprite, but animate over a time lapse
 Sprite.prototype.moveTo = function (x, y, time) {
   time = time || 1;
-  this.div.style.webkitTransition = "all " + time + "s";
+  this.div.style.webkitTransition = "-webkit-transform " + time + "s";
   this.setTransform(x, y);
 };
 
