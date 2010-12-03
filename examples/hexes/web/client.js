@@ -3,8 +3,23 @@
 var colors = ['space', 'red', 'brown', 'purple', 'blue', 'orange', 
               'green', 'yellow'];
 
-var socket = new io.Socket(); 
+var socket = new io.Socket("10.0.1.160", {port: 8080}); 
 socket.connect();
+var flail = true;
+setInterval(function () {
+  if (flail) {
+    socket.connect();
+  }
+}, 1000);
+socket.on('connect', function () {
+  flail = false;
+});
+socket.on('disconnect', function () {
+  flail = true;
+});
+
+
+
 
 var pieces = {};
 
@@ -77,6 +92,10 @@ Space.prototype.onClick = function (evt) {
 };
 
 function Piece(x, y, colorCode) {
+  if (pieces.hasOwnProperty(colorCode)) {
+    pieces[colorCode].moveTo(x, y);
+    return pieces[colorCode];
+  }
   Tile.call(this, x, y, colorCode);
   this.id = colorCode;
   pieces[colorCode] = this;
