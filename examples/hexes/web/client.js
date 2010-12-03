@@ -88,6 +88,11 @@ Piece.prototype.destroy = function () {
   delete pieces[this.id];
   Tile.prototype.destroy.call(this);
 };
+var zIndex = 1000;
+Piece.prototype.moveTo = function () {
+  this.div.style.zIndex = zIndex ++;
+  Sprite.prototype.moveTo.apply(this, arguments);
+};
 
 // Set up inheritance
 Space.prototype.__proto__ = Tile.prototype;
