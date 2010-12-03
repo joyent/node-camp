@@ -10,22 +10,22 @@ var pieces = {};
 
 var Commands = {
   map: function (map) {
-    map.forEach(function (column, x) {
-      column.forEach(function (id, y) {
-        if (id) {
-          var piece = new Piece(x, y, id);
-        }
-      });
+    Object.keys(map).forEach(function (id) {
+      var params = map[id];
+      var piece = new Piece(params.x, params.y, id);
     });
   },
   move: function (params) {
+    if (selection && params.id === selection.piece.id) {
+      selection.destroy();
+    }
     pieces[params.id].moveTo(params.x, params.y);
   }
 };
 
 
 socket.on('message', function (message) {
-  console.log("message", message);
+  //console.log(message);
   Object.keys(message).forEach(function (command) {
     if (Commands.hasOwnProperty(command)) {
       Commands[command](message[command]);
