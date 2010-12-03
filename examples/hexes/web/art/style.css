@@ -1,0 +1,36 @@
+html, body {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #222;
+}
+#sprites {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+  width: 320px;
+  height: 480px;
+  background: #000 url(background.jpg);
+  margin: -240px 0 0 -160px;
+  -webkit-box-shadow: 10px 5px 5px black;
+}
+#sprites div {
+  position: absolute;
+  background: url(sprites.png);
+  border-radius: 24px;
+  width: 74px;
+  height: 64px;
+}
+#sprites .highlight { background-position: 0px 0px; }
+#sprites .space { background-position: 0px 512px; }
+#sprites .red { background-position: 0px 448px; }
+#sprites .brown { background-position: 0px 384px; }
+#sprites .purple { background-position: 0px 320px; }
+#sprites .blue { background-position: 0px 256px; }
+#sprites .orange { background-position: 0px 192px; }
+#sprites .green { background-position: 0px 128px; }
+#sprites .yellow { background-position: 0px 64px; }
+

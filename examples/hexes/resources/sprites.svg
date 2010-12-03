@@ -39,6 +39,34 @@
          stdDeviation="4.9521875"
          id="feGaussianBlur4212" />
     </filter>
+    <inkscape:perspective
+       id="perspective3780"
+       inkscape:persp3d-origin="0.5 : 0.33333333 : 1"
+       inkscape:vp_z="1 : 0.5 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_x="0 : 0.5 : 1"
+       sodipodi:type="inkscape:persp3d" />
+    <filter
+       color-interpolation-filters="sRGB"
+       inkscape:collect="always"
+       id="filter4210-7"
+       x="-0.25767481"
+       width="1.5153496"
+       y="-0.29713124"
+       height="1.5942625">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="4.9521875"
+         id="feGaussianBlur4212-3" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       id="filter3860">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="1.5071875"
+         id="feGaussianBlur3862" />
+    </filter>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -48,11 +76,11 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.70710678"
-     inkscape:cx="114.05531"
-     inkscape:cy="187.63294"
+     inkscape:cx="48.625746"
+     inkscape:cy="300.53222"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
-     showgrid="false"
+     showgrid="true"
      inkscape:window-width="1600"
      inkscape:window-height="851"
      inkscape:window-x="0"
@@ -74,7 +102,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -212,10 +240,7 @@
          style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#e9b96e;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono" />
     </g>
     <g
-       id="g4617"
-       inkscape:export-filename="/home/tim/Desktop/node-camp/examples/hexius/web/sprites.png"
-       inkscape:export-xdpi="90"
-       inkscape:export-ydpi="90">
+       id="g3805">
       <path
          sodipodi:nodetypes="ccccccc"
          id="path4252"
@@ -889,6 +914,39 @@
          style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#babdb6;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono"
          d="m 68,556.36218 -1.125,2 17.8125,30 -17.84375,30 -33.6875,0 -0.0312,-0.0312 -1.125,2.03125 36,0 19,-32 -19,-32 z"
          id="path5083" />
+    </g>
+    <g
+       id="g3864"
+       transform="translate(0,-64)">
+      <path
+         id="path3866"
+         transform="translate(0,572.36218)"
+         d="m -55,-32 -19,32 19,32 36,0 19,-32 -19,-32 -36,0 z m 2.84375,5 30.3125,0 16.03125,27 -16.0625,27 -30.25,0 -16.0625,-27 16.03125,-27 z"
+         style="opacity:0.42916667;fill:#ffffff;fill-opacity:1;stroke:none" />
+      <path
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;opacity:0.29166667;color:#000000;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:24;marker:none;visibility:visible;display:inline;overflow:visible;filter:url(#filter3860);enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono"
+         d="m -48.1875,552.375 22.375,0 11.875,20 -11.875,20 -22.375,0 -11.875,-20 11.875,-20 z"
+         id="path3868" />
+    </g>
+    <g
+       inkscape:export-ydpi="90"
+       inkscape:export-xdpi="90"
+       inkscape:export-filename="/home/tim/Desktop/node-camp/examples/hexius/web/background.png"
+       id="g3870"
+       transform="translate(-87,-16)">
+      <path
+         style="opacity:0.8;fill:#888a85;fill-opacity:1;stroke:none"
+         d="m 86.99999,588.36218 -18.99999,32 -36,0 -18.99999,-32 L 32,556.36215 l 36,0 18.99999,32.00003 z"
+         id="path3872"
+         sodipodi:nodetypes="ccccccc" />
+      <path
+         id="path3874"
+         d="m 32,556.36218 -19,32 19,32 1.125,-2 0,-0.0312 -17.8125,-29.96875 17.8125,-30 0.0312,0 33.6875,0 0.03125,0 1.125,-2 -36,0 z"
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#2e3436;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono" />
+      <path
+         id="path3876"
+         d="m 68,556.36218 -1.125,2 17.8125,30 -17.84375,30 -33.6875,0 -0.0312,-0.0312 -1.125,2.03125 36,0 19,-32 -19,-32 z"
+         style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#babdb6;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono" />
     </g>
   </g>
 </svg>
