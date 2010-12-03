@@ -43,6 +43,7 @@ function Selection(piece) {
   }
   selection = this;
   Sprite.call(this, piece.x, piece.y, 'highlight');
+  this.div.style.zIndex = zIndex ++;
   this.piece = piece;
 }
 // Hook into destroy to remove reference from selection
