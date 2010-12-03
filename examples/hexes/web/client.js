@@ -3,9 +3,11 @@
 var colors = ['space', 'red', 'brown', 'purple', 'blue', 'orange', 
               'green', 'yellow'];
 
-var socket = new io.Socket("localhost", {port: 8080}); 
+var socket = new io.Socket(); 
+socket.connect();
+
 socket.on('connect', function () {
-  socket.send({hi: true});
+  console.log("Connected");
 });
 
 // Singleton selection sprite

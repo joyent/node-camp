@@ -1,4 +1,4 @@
 #!/bin/sh
 palm-package web
 palm-install *.ipk
-palm-launch org.nodejs.camp.exploder
+palm-launch org.nodejs.camp.conquest

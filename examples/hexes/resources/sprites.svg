@@ -82,9 +82,9 @@
      inkscape:current-layer="layer1"
      showgrid="true"
      inkscape:window-width="1600"
-     inkscape:window-height="851"
+     inkscape:window-height="875"
      inkscape:window-x="0"
-     inkscape:window-y="24"
+     inkscape:window-y="0"
      inkscape:window-maximized="1">
     <inkscape:grid
        type="xygrid"
@@ -102,7 +102,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -127,7 +127,7 @@
     </g>
     <g
        id="g4632"
-       inkscape:export-filename="/home/tim/Desktop/node-camp/examples/hexius/web/sprites.png"
+       inkscape:export-filename="/home/tim/Desktop/node-camp/examples/hexes/web/art/sprites.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">
       <path
@@ -146,7 +146,7 @@
     </g>
     <g
        id="g4627"
-       inkscape:export-filename="/home/tim/Desktop/node-camp/examples/hexius/web/sprites.png"
+       inkscape:export-filename="/home/tim/Desktop/node-camp/examples/hexes/web/art/sprites.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">
       <path
@@ -165,7 +165,7 @@
     </g>
     <g
        id="g4642"
-       inkscape:export-filename="/home/tim/Desktop/node-camp/examples/hexius/web/sprites.png"
+       inkscape:export-filename="/home/tim/Desktop/node-camp/examples/hexes/web/art/sprites.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">
       <path
@@ -184,7 +184,7 @@
     </g>
     <g
        id="g4637"
-       inkscape:export-filename="/home/tim/Desktop/node-camp/examples/hexius/web/sprites.png"
+       inkscape:export-filename="/home/tim/Desktop/node-camp/examples/hexes/web/art/sprites.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">
       <path
@@ -203,7 +203,7 @@
     </g>
     <g
        id="g4647"
-       inkscape:export-filename="/home/tim/Desktop/node-camp/examples/hexius/web/sprites.png"
+       inkscape:export-filename="/home/tim/Desktop/node-camp/examples/hexes/web/art/sprites.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">
       <path
@@ -222,7 +222,7 @@
     </g>
     <g
        id="g4622"
-       inkscape:export-filename="/home/tim/Desktop/node-camp/examples/hexius/web/sprites.png"
+       inkscape:export-filename="/home/tim/Desktop/node-camp/examples/hexes/web/art/sprites.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90">
       <path
@@ -240,7 +240,10 @@
          style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;color:#000000;fill:#e9b96e;fill-opacity:1;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Andale Mono;-inkscape-font-specification:Andale Mono" />
     </g>
     <g
-       id="g3805">
+       id="g3805"
+       inkscape:export-filename="/home/tim/Desktop/node-camp/examples/hexes/web/art/sprites.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <path
          sodipodi:nodetypes="ccccccc"
          id="path4252"
@@ -917,7 +920,10 @@
     </g>
     <g
        id="g3864"
-       transform="translate(0,-64)">
+       transform="translate(0,-64)"
+       inkscape:export-filename="/home/tim/Desktop/node-camp/examples/hexes/web/art/sprites.png"
+       inkscape:export-xdpi="90"
+       inkscape:export-ydpi="90">
       <path
          id="path3866"
          transform="translate(0,572.36218)"
@@ -931,7 +937,7 @@
     <g
        inkscape:export-ydpi="90"
        inkscape:export-xdpi="90"
-       inkscape:export-filename="/home/tim/Desktop/node-camp/examples/hexius/web/background.png"
+       inkscape:export-filename="/home/tim/Desktop/node-camp/examples/hexes/web/art/sprites.png"
        id="g3870"
        transform="translate(-87,-16)">
       <path
