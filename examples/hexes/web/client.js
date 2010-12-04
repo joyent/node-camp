@@ -3,14 +3,16 @@
 var colors = ['space', 'red', 'brown', 'purple', 'blue', 'orange', 
               'green', 'yellow'];
 
-var socket = new io.Socket("10.0.1.160", {port: 8080}); 
-socket.connect();
+var socket = new io.Socket("10.0.1.9", {port: 8080}); 
+setTimeout(function () {
+  socket.connect();
+}, 100);
 var flail = true;
 setInterval(function () {
   if (flail) {
     socket.connect();
   }
-}, 1000);
+}, 10000);
 socket.on('connect', function () {
   flail = false;
 });
