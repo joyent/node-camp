@@ -17,14 +17,13 @@ Sprite.pending = [];
 Sprite.prototype.setTransform = function (x, y) {
   this.x = x;
   this.y = y;
-  var transform = "translate3d(" + x + "px, " + y + "px, 0)";
-  this.div.style.webkitTransform = transform;
+  this.div.style.webkitTransform = "translate3d(" + x + "px, " + y + "px, 0)";
 };
 
 // Move the sprite, but animate over a time lapse
 Sprite.prototype.moveTo = function (x, y, time) {
   time = time || 1;
-  this.div.style.webkitTransition = "-webkit-transform " + time + "s";
+  this.div.style.webkitTransitionDuration = time + "s";
   this.setTransform(x, y);
 };
 

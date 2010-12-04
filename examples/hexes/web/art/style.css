@@ -4,18 +4,14 @@ html, body {
   margin: 0;
   height: 100%;
   width: 100%;
-  background-color: #222;
+  background-color: #000;
 }
 #sprites {
   position: absolute;
-  top: 50%;
-  left: 50%;
   overflow: hidden;
   width: 320px;
   height: 480px;
   background: #000 url(background.png);
-  margin: -240px 0 0 -160px;
-  -webkit-box-shadow: 10px 5px 5px black;
 }
 #sprites div {
   position: absolute;
@@ -23,6 +19,9 @@ html, body {
   border-radius: 24px;
   width: 74px;
   height: 64px;
+  -webkit-transition-property: -webkit-transform;
+  -webkit-transition-duration: 1s;
+  -webkit-transition-timing-function: linear;
 }
 #sprites .highlight { background-position: 0px 0px; }
 #sprites .space { background-position: 0px 512px; }
