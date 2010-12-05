@@ -15,7 +15,7 @@ html, body {
   margin-left: -160px;
   width: 320px;
   height: 480px;
-  background: #000 url(background.png);
+  background: url(logo.png) center no-repeat;
 }
 #sprites div {
   position: absolute;

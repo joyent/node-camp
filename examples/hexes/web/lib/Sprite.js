@@ -51,9 +51,18 @@ window.addEventListener('load', function () {
       height = container.clientHeight;
 
   function onResize() {
-    var scale = Math.min(window.innerWidth / width,
-                         window.innerHeight / height);
-    container.style.webkitTransform = "scale(" + scale + ")";
+    var winWidth = window.innerWidth,
+        winHeight = window.innerHeight;
+    var vertical = (height > width) === (winHeight > winWidth);
+    var transform;
+    if (vertical) {
+      transform = "scale(" + 
+        Math.min(winWidth / width, winHeight / height) + ")";
+    } else {
+      transform = "scale(" + 
+        Math.min(winWidth / height, winHeight / width) + ") rotate(-90deg)";
+    }
+    container.style.webkitTransform = transform;
   }
   window.addEventListener('resize', onResize);
   onResize();
