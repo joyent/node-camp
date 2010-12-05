@@ -1,9 +1,8 @@
 /*global document window*/
 
 function Sprite(x, y, className) {
-  var div = this.div = document.createElement('div');
+  var div = this.renderDiv(className);
   div.sprite = this;
-  div.setAttribute('class', className);
   this.setTransform(x, y);
   if (Sprite.container) {
     Sprite.container.appendChild(div);
@@ -12,6 +11,12 @@ function Sprite(x, y, className) {
   }
 }
 Sprite.pending = [];
+
+Sprite.prototype.renderDiv = function (className) {
+  var div = this.div = document.createElement('div');
+  div.setAttribute('class', className);
+  return div;
+};
 
 // Move the sprite to a specified offset using hardware accel.
 Sprite.prototype.setTransform = function (x, y) {
@@ -42,6 +47,17 @@ window.addEventListener('load', function () {
   Sprite.pending.forEach(function (div) {
     container.appendChild(div);
   });
+  var width = container.clientWidth,
+      height = container.clientHeight;
+
+  function onResize() {
+    var scale = Math.min(window.innerWidth / width,
+                         window.innerHeight / height);
+    container.style.webkitTransform = "scale(" + scale + ")";
+  }
+  window.addEventListener('resize', onResize);
+  onResize();
+
   delete Sprite.pending;
 
   function findSprite(target) {
