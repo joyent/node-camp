@@ -1,14 +1,12 @@
-
 var Connect = require('connect');
 
-var web = __dirname + "/web";
+var PORT = process.env.PORT || 8080;
 
+// Serve static files and log requests to the server
 Connect.createServer(
   Connect.logger(),
-  Connect.staticProvider(web)
-).listen(8080);
+  Connect.staticProvider('web')
+).listen(PORT);
 
-console.log("Exploder server running at http://localhost:8080");
-
-
+console.log("Exploder server running at http://localhost:%s", PORT);
 
