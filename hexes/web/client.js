@@ -1,55 +1,182 @@
-/*global document window PalmSystem io Commands*/
+/*global PalmSystem io */
 
-function Sprite(x, y, className) {
-  var div = this.renderDiv(className);
-  div.sprite = this;
+// Set up a socket.io channel with the backend server
+var socket, // socket.io connection with server
+    Commands, // Local commands the server can send us
+    container; // The HTML container for all the Sprites
+
+// Number to color lookup table.
+// The backend sends numbers, the css expects strings.
+var colors = ['space', 'red', 'brown', 'purple', 'blue', 'orange', 
+              'green', 'yellow'];
+
+var selected, // The currently selected piece (if any)
+    pieces = {}, // Index of all pieces for easy reference
+    zIndex = 1000; // Used to make moving divs always on top.
+
+///////////////////////////////////////////////////////////////////////////////
+//                  Constructors and Prototypes (Classes)                    //
+///////////////////////////////////////////////////////////////////////////////
+
+// Tile - shared parent for Piece and Space
+function Tile(x, y, colorCode) {
+  this.renderDiv(colors[colorCode]);
   this.setTransform(x, y);
-  if (Sprite.container) {
-    Sprite.container.appendChild(div);
-  } else {
-    Sprite.pending.push(div);
-  }
 }
-Sprite.pending = [];
-
-Sprite.prototype.renderDiv = function (className) {
+Tile.prototype.renderDiv = function (className) {
   var div = this.div = document.createElement('div');
   div.setAttribute('class', className);
+  div.sprite = this;
+  container.appendChild(div);
   return div;
 };
-
 // Move the sprite to a specified offset using hardware accel.
-Sprite.prototype.setTransform = function (x, y) {
+Tile.prototype.setTransform = function (x, y) {
   this.x = x;
   this.y = y;
-  this.div.style.webkitTransform = "translate3d(" + x + "px, " + y + "px, 0)";
+  var px = x * 55 + 10,
+      py = 47 + y * 64 - (x % 2) * 32;
+  this.div.style.webkitTransform = "translate3d(" + px + "px, " + py + "px, 0)";
+};
+Tile.prototype.destroy = function () {
+  container.removeChild(this.div);
 };
 
-// Move the sprite, but animate over a time lapse
-Sprite.prototype.moveTo = function (x, y, time) {
+// Super minimal OOP inheritance library
+Tile.adopt = function (child) {
+  child.__proto__ = this;
+  child.prototype.__proto__ = this.prototype;
+  child.parent = this;
+};
+
+///////////////////////////////////////////////////////////////////////////////
+// Space - grid spaces on the board
+function Space(x, y) {
+  Tile.call(this, x, y, 0);
+}
+Tile.adopt(Space);
+Space.prototype.onClick = function (evt) {
+  if (selected) {
+    socket.send({move: {id: selected.id, x: this.x, y: this.y}});
+    selected.deselect();
+  }
+};
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Piece - moving, colored hexagon piece
+function Piece(x, y, colorCode) {
+  // If this piece already exists, then reuse it and move
+  // to the new location.
+  if (pieces.hasOwnProperty(colorCode)) {
+    pieces[colorCode].moveTo(x, y);
+    return pieces[colorCode];
+  }
+  // Create a new Piece and put in the index
+  Tile.call(this, x, y, colorCode);
+  // In this simple I'm using the colorCode as the ID, in a real game these
+  // probably need to be separate
+  this.id = colorCode;
+  pieces[colorCode] = this;
+}
+Tile.adopt(Piece); // Piece inherits from Tile
+Piece.prototype.renderDiv = function () {
+  var div = Piece.parent.prototype.renderDiv.apply(this, arguments);
+  var child = document.createElement('div');
+  this.child = child;
+  child.style.display = "none";
+  div.appendChild(child);
+  return div;
+};
+// Move the piece, but animate over a time lapse
+Piece.prototype.moveTo = function (x, y, time) {
   time = time || 1;
+  this.div.style.zIndex = zIndex++;
   this.div.style.webkitTransitionDuration = time + "s";
   this.setTransform(x, y);
 };
+Piece.prototype.select = function () {
+  if (selected) {
+    selected.deselect();
+  }
+  selected = this;
+  this.child.style.display = "block";
+};
+Piece.prototype.deselect = function () {
+  if (selected === this) {
+    selected = null;
+  }
+  this.child.style.display = "none";
+};
+Piece.prototype.onClick = Piece.prototype.select;
 
-Sprite.prototype.destroy = function () {
-  if (Sprite.container) {
-    Sprite.container.removeChild(this.div);
-  } else {
-    Sprite.pending.splice(Sprite.pending.indexOf(this.div), 1);
+///////////////////////////////////////////////////////////////////////////////
+//                           External API Commands                           //
+///////////////////////////////////////////////////////////////////////////////
+Commands = {
+  map: function (map) {
+    Object.keys(map).forEach(function (id) {
+      var params = map[id];
+      var piece = new Piece(params.x, params.y, id);
+    });
+  },
+  move: function (params) {
+    if (selected && params.id === selected.id) {
+      selected.deselect();
+    }
+    pieces[params.id].moveTo(params.x, params.y);
   }
 };
 
+
+///////////////////////////////////////////////////////////////////////////////
+//                           Initialization of window                        //
+///////////////////////////////////////////////////////////////////////////////
 window.addEventListener('load', function () {
 
-  // Find the container and append any pending divs
-  var container = Sprite.container = document.getElementById('sprites');
-  Sprite.pending.forEach(function (div) {
-    container.appendChild(div);
+  // Connect to the backend server for duplex communication
+  if (typeof PalmSystem === 'undefined') {
+    // webOS apps are special since the static files don't come from the server
+    socket = new io.Socket("creationix.com", {
+      port: 8080,
+      transports: ['xhr-polling']
+    });
+  } else {
+    socket = new io.Socket();
+  }
+  var flail = true;
+  function tryConnect() {
+    if (flail) {
+      socket.connect();
+    }
+  }
+  setTimeout(tryConnect);
+  setInterval(tryConnect, 10000);
+  socket.on('connect', function () {
+    flail = false;
   });
+  socket.on('disconnect', function () {
+    console.error("Got disconnected from server!");
+    flail = true;
+  });
+
+  // Forward messages from the backend to the Commands object in the client
+  socket.on('message', function (message) {
+    Object.keys(message).forEach(function (command) {
+      if (Commands.hasOwnProperty(command)) {
+        Commands[command](message[command]);
+      } else {
+        console.error("Invalid command " + command);
+      }
+    });
+  });
+
+  // Store a reference to the container div in the dom
+  container = document.getElementById('sprites');
+
+  // Always fit the sprite container to the window and even auto-rotate
   var width = container.clientWidth,
       height = container.clientHeight;
-
   function onResize() {
     var winWidth = window.innerWidth,
         winHeight = window.innerHeight;
@@ -67,8 +194,7 @@ window.addEventListener('load', function () {
   window.addEventListener('resize', onResize);
   onResize();
 
-  delete Sprite.pending;
-
+  // Hook up mouse(down, move, up) and touch(down, move, up) to sprites
   function findSprite(target) {
     if (target === container) {
       return;
@@ -81,13 +207,10 @@ window.addEventListener('load', function () {
     }
     return findSprite(target.parentNode);
   }
-
   var start;
-  var a;
   // Listen for mouse and touch events
   function onDown(evt) {
     start = findSprite(evt.target);
-
     if (!start) {
       return;
     }
@@ -152,170 +275,19 @@ window.addEventListener('load', function () {
   }, false);
   document.addEventListener('touchend', onUp, false);
 
-});
+  // Draw the board on load
+  for (var x = 0; x < 5; x++) {
+    for (var y = 0; y < (6 + x % 2); y++) {
+      new Space(x, y);
+    }
+  }
 
-
-// Start the palm system if we're in a webOS app
-if (typeof PalmSystem !== 'undefined') {
-  window.addEventListener('load', function () {
+  // Start the palm system if we're in a webOS app
+  if (typeof PalmSystem !== 'undefined') {
     PalmSystem.stageReady();
     if (PalmSystem.enableFullScreenMode) {
       PalmSystem.enableFullScreenMode(true);
     }
-  }, true);
-}
-
-// Define Object.create if the browser doesn't have it already
-if (!Object.hasOwnProperty('create')) {
-  (function () {
-    function F() {}
-    Object.create = function (parent) {
-      F.prototype = parent;
-      return new F();
-    };
-  }());
-}
-
-
-
-// Set up a socket.io channel with the backend server
-var socket;
-if (typeof PalmSystem !== 'undefined') {
-  // webOS apps are special since the static files don't come from the server
-  socket = new io.Socket("creationix.com", {
-    port: 8080,
-    transports: ['xhr-polling']
-  });
-} else {
-  socket = new io.Socket();
-}
-
-window.addEventListener('load', function () {
-
-  var flail = true;
-  function tryConnect() {
-    if (flail) {
-      socket.connect();
-    }
   }
-  setTimeout(tryConnect);
-  setInterval(tryConnect, 10000);
-  socket.on('connect', function () {
-    flail = false;
-  });
-  socket.on('disconnect', function () {
-    console.error("Got disconnected from server!");
-    flail = true;
-  });
-});
 
-// Super small OOP library for easy inheritance
-function inherits(child, parent) {
-  child.prototype = Object.create(parent.prototype);
-  child.prototype.constructor = child;
-  child.parent = parent;
-}
-
-// Forward messages from the backend to the Commands object in the client
-socket.on('message', function (message) {
-  //console.log(message);
-  if (!Commands) {
-    return;
-  }
-  Object.keys(message).forEach(function (command) {
-    if (Commands.hasOwnProperty(command)) {
-      Commands[command](message[command]);
-    } else {
-      console.error("Invalid command " + command);
-    }
-  });
-});
-/*global document Sprite socket inherits*/
-
-var colors = ['space', 'red', 'brown', 'purple', 'blue', 'orange', 
-              'green', 'yellow'];
-
-var selected;
-var pieces = {};
-var zIndex = 1000;
-
-function Tile(x, y, colorCode) {
-  Sprite.call(this, x, y, colors[colorCode]);
-}
-inherits(Tile, Sprite);
-Tile.prototype.setTransform = function (x, y) {
-  x = x * 55 + 10;
-  y = 47 + y * 64 - (x % 2) * 32;
-  Sprite.prototype.setTransform.call(this, x, y);
-};
-
-function Space(x, y) {
-  this.gx = x;
-  this.gy = y;
-  Tile.call(this, x, y, 0);
-}
-inherits(Space, Tile);
-Space.prototype.onClick = function (evt) {
-  if (selected) {
-    socket.send({move: {id: selected.id, x: this.gx, y: this.gy}});
-    selected.deselect();
-  }
-};
-
-function Piece(x, y, colorCode) {
-  if (pieces.hasOwnProperty(colorCode)) {
-    pieces[colorCode].moveTo(x, y);
-    return pieces[colorCode];
-  }
-  Tile.call(this, x, y, colorCode);
-  this.id = colorCode;
-  pieces[colorCode] = this;
-}
-inherits(Piece, Tile);
-Piece.prototype.renderDiv = function () {
-  var div = Tile.prototype.renderDiv.apply(this, arguments);
-  var child = document.createElement('div');
-  this.child = child;
-  child.style.display = "none";
-  div.appendChild(child);
-  return div;
-};
-Piece.prototype.select = function () {
-  if (selected) {
-    selected.deselect();
-  }
-  selected = this;
-  this.child.style.display = "block";
-};
-Piece.prototype.deselect = function () {
-  if (selected === this) {
-    selected = null;
-  }
-  this.child.style.display = "none";
-};
-Piece.prototype.onClick = Piece.prototype.select;
-Piece.prototype.moveTo = function () {
-  this.div.style.zIndex = zIndex++;
-  Sprite.prototype.moveTo.apply(this, arguments);
-};
-
-var Commands = {
-  map: function (map) {
-    Object.keys(map).forEach(function (id) {
-      var params = map[id];
-      var piece = new Piece(params.x, params.y, id);
-    });
-  },
-  move: function (params) {
-    if (selected && params.id === selected.id) {
-      selected.deselect();
-    }
-    pieces[params.id].moveTo(params.x, params.y);
-  }
-};
-
-for (var x = 0; x < 5; x++) {
-  for (var y = 0; y < (6 + x % 2); y++) {
-    new Space(x, y);
-  }
-}
+}, false);
