@@ -22,7 +22,7 @@ if (!Object.hasOwnProperty('create')) {
 var socket;
 if (typeof PalmSystem !== 'undefined') {
   // webOS apps are special since the static files don't come from the serveri
-  socket = new io.Socket("10.0.1.9", {
+  socket = new io.Socket("creationix.com", {
     port: 8080,
     transports: ['xhr-polling']
   });
