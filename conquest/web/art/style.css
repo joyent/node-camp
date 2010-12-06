@@ -27,7 +27,7 @@ html, body {
   position: absolute;
   width: 20px;
   height: 20px;
-  background-image: url(imgs/sprites.png);
+  background-image: url(sprites.png);
 }
 .land div {
   position:absolute;
@@ -52,13 +52,13 @@ html, body {
 .orange .land div { background-color: #fcaf3e; }
 .blue .land div { background-color: #729fcf; }
 
-.purple .city div { background-image: url(imgs/purple-city.png); }
-.brown .city div { background-image: url(imgs/brown-city.png); }
-.red .city div { background-image: url(imgs/red-city.png); }
-.yellow .city div { background-image: url(imgs/yellow-city.png); }
-.green .city div { background-image: url(imgs/green-city.png); }
-.orange .city div { background-image: url(imgs/orange-city.png); }
-.blue .city div { background-image: url(imgs/blue-city.png); }
+.purple .city div { background-image: url(purple-city.png); }
+.brown .city div { background-image: url(brown-city.png); }
+.red .city div { background-image: url(red-city.png); }
+.yellow .city div { background-image: url(yellow-city.png); }
+.green .city div { background-image: url(green-city.png); }
+.orange .city div { background-image: url(orange-city.png); }
+.blue .city div { background-image: url(blue-city.png); }
 
 .purple .land div.bordered { border-color: #75507b; }
 .brown .land div.bordered { border-color: #c17d11; }
