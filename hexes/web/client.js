@@ -135,8 +135,7 @@ Commands = {
 window.addEventListener('load', function () {
 
   // Connect to the backend server for duplex communication
-  if (typeof PalmSystem === 'undefined') {
-    // webOS apps are special since the static files don't come from the server
+  if (window.location.protocol === 'file:') {
     socket = new io.Socket("creationix.com", {
       port: 8080,
       transports: ['xhr-polling']

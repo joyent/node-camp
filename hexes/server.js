@@ -6,7 +6,7 @@ var PORT = process.env.PORT || 8080;
 
 // Serve static files in the web folder
 var server = Connect.createServer(
-  Connect.staticProvider('web')
+  Connect.staticProvider(__dirname + '/web')
 );
 
 // Listen to socket.io traffic too
