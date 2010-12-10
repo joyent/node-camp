@@ -23,4 +23,11 @@ here's what you need to do to get set up:
  (If you're on an actual device, there are alternate binaries in the node/bin folder)
 
 
+To forward port 9000 from the emulator to your local computer do this:
 
+    VBoxManage setextradata "SDK 1.4.5.465 (320x400)"  "VBoxInternal/Devices/pcnet/0/LUN#0/Config/ssh/HostPort" 9000
+    VBoxManage setextradata  "SDK 1.4.5.465 (320x400)"  "VBoxInternal/Devices/pcnet/0/LUN#0/Config/ssh/GuestPort" 9000
+    VBoxManage setextradata "SDK 1.4.5.465 (320x400)" "VBoxInternal/Devices/pcnet/0/LUN#0/Config/ssh/Protocol" TCP
+
+Once you have typed the above commands, you need to close the Guest Machine
+(a reboot won’t be sufficient).
