@@ -16,7 +16,7 @@ here's what you need to do to get set up:
  7. Unzip the file:  
     `tar -xzvf nodeFor145.tar.gz`
  8. Install node by creating prepending it to the system path:
-    `echo "export PATH=/media/internal/node/bin:\$PATH" >> /etc/profile
+    `echo "export PATH=/media/internal/node/bin:\$PATH" >> /etc/profile`
  9. Log out with Control+d and log back in with `novaterm`
  10. Verify it works by typing: `which node`
 
