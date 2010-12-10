@@ -124,7 +124,10 @@ Commands = {
     if (selected && params.id === selected.id) {
       selected.deselect();
     }
-    pieces[params.id].moveTo(params.x, params.y);
+    var piece = pieces[params.id];
+    var distance = Math.sqrt((piece.x - params.x) * (piece.x - params.x) +
+                             (piece.y - params.y) * (piece.y - params.y));
+    piece.moveTo(params.x, params.y, distance / 5);
   }
 };
 
