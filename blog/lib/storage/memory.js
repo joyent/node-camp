@@ -55,7 +55,7 @@ Memory.prototype.lookup = function(id, fn){
 
 Memory.prototype.remove = function(id, fn){
   var und = this.data[id] == undefined;
-  if (!und) this.data.splice(id, 1);
+  this.data[id] = null;
   fn(und ? new Error : null);
   return this;
 };
