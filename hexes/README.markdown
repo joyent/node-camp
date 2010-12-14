@@ -2,6 +2,12 @@
 
 This is a simple game that uses a remote nodejs server to sync up piece movements between all players.
 
+Before you can run this, you need connect, and socket.io libraries installed.
+
+Install node + npm, and then install the deps with:
+
+    npm install connect socket.io
+
 To start the server simply type the following in this folder:
  
     node server.js
