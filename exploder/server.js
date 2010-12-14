@@ -1,6 +1,6 @@
 var Connect = require('connect');
 
-var PORT = process.env.PORT || 8080;
+var PORT = process.env.PORT || 8081;
 
 // Serve static files and log requests to the server
 Connect.createServer(

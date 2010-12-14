@@ -114,6 +114,9 @@ Piece.prototype.onClick = Piece.prototype.select;
 //                           External API Commands                           //
 ///////////////////////////////////////////////////////////////////////////////
 Commands = {
+  reload: function () {
+    window.location.reload();
+  },
   map: function (map) {
     Object.keys(map).forEach(function (id) {
       var params = map[id];

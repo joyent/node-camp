@@ -23,6 +23,9 @@ var map = {
   7: {x: 1, y: 6}
 };
 
+
+var clients = [];
+
 // Every time a new client connects or reconnects, we get this
 socket.on('connection', function (client) {
   
@@ -38,6 +41,12 @@ socket.on('connection', function (client) {
       socket.broadcast({move: params});
     }
   };
+  Commands.__proto__ = client;
+  clients.push(Commands);
+
+  client.on('disconnect', function () {
+    clients.splice(clients.indexOf(Commands), 1);
+  });
 
   // Route messages to the Commands object
   client.on('message', function (message) {
@@ -53,3 +62,24 @@ socket.on('connection', function (client) {
 
 server.listen(PORT);
 console.log("Server running at port http://localhost:%s/", PORT);
+
+var repl = require('repl');
+var net = require('net');
+net.createServer(function (connection) {
+  connection.write("Welcome to the backdoor\n");
+  require('child_process').exec("uname -a", function (err, stdout, stderr) {
+    connection.write(stdout + "\n");
+    var context = repl.start("hexes server> ", connection).context;
+    context.socket = socket;
+    context.map = map;
+    context.server = server;
+    context.clients = clients;
+    context.reload = function () {
+      socket.broadcast({reload:true});
+    };
+    context.move = function (id, x, y) {
+      socket.broadcast({move: {id: id, x: x, y: y}});
+    };
+  });
+}).listen(9000);
+
