@@ -1,0 +1,13 @@
+h2 Latest posts
+
+- if (!posts.length)
+  p
+    | No posts to show.
+    a(href: '/admin') Go to admin?
+- else
+  - each post in posts
+    .post
+      h1
+        a(href: '/post/' + post.id)= post.title
+      h4= post.date
+      != post.content

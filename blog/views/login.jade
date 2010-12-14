@@ -1,0 +1,19 @@
+h2 Login
+
+- if (typeof error != 'undefined')
+  p
+    b ERROR! 
+    = error
+
+form(action: '/admin/login', method: 'post')
+  fieldset
+    legend Login
+    dl
+      dt User
+      dd
+        input(type: 'text', name: 'username')
+    dl
+      dt Pass
+      dd
+        input(type: 'password', name: 'password')
+    button Send!

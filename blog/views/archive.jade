@@ -1,0 +1,12 @@
+h2 Archive
+
+- if (!posts.length)
+  p
+    | No posts to show.
+    a(href: '/admin') Go to admin?
+- else
+  - each post in posts
+    .archive
+      span.date= post.date
+      h3
+        a(href: '/post/' + post.id)= post.title

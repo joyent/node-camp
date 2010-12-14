@@ -1,0 +1,15 @@
+!!!
+html
+  head
+    title= this.app.set('name')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    #header
+      h1= this.app.set('name')
+      nav
+        a(href: '/') Index
+        | |
+        a(href: '/archive') Archive
+        | |
+        a(href: '/admin') Admin
+    != body

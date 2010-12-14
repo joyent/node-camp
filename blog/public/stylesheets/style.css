@@ -1,0 +1,123 @@
+body {
+  padding: 50px;
+  background: url('/images/grid.png');
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+#header {
+  -webkit-box-shadow: #42697B 1px 1px 5px;
+  background: url(/images/darkbg.png);
+  border-bottom-left-radius: 7px 7px;
+  border-bottom-left-radius: 7px 7px;
+  border-bottom-right-radius: 7px 7px;
+  border-bottom-right-radius: 7px 7px;
+  border-top-left-radius: 7px 7px;
+  border-top-left-radius: 7px 7px;
+  border-top-right-radius: 7px 7px;
+  border-top-right-radius: 7px 7px;
+  padding: 20px;
+}
+
+#header h1 {
+  margin: 0;
+  color: #B6CAD4;
+  font-size: 17px;
+  font-family: 'Lucida Grande', 'Lucida Sans Unicode', arial, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#header nav a {
+  color: #999;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+#header nav a:hover {
+  color: #fff;
+}
+
+fieldset, .post {
+  background-color: white;
+  border: 1px solid #E2ECF0;
+  border-bottom-left-radius: 7px 7px;
+  border-bottom-right-radius: 7px 7px;
+  border-top-left-radius: 7px 7px;
+  border-top-right-radius: 7px 7px;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+legend {
+  text-transform: uppercase;
+  font-weight: bold;
+  background: #eee;
+  padding: 5px 15px;
+}
+
+dl {
+  overflow: hidden;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin: 10px 0;
+}
+
+input {
+  width: 250px;
+  padding: 5px;
+}
+
+textarea {
+  height: 100px;
+  width: 400px;
+  padding: 5px;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+table td, table th {
+  border: 1px solid #333;
+  padding: 10px;
+}
+
+table th {
+  background: #fff;
+}
+
+.post h1 {
+  margin: 10px 0 0;
+}
+
+.post h1 a {
+  color: #142833;
+  font: normal normal normal 18px/normal 'Lucida Grande', 'Lucida Sans Unicode', arial, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.post h4 {
+  margin: 3px 0 15px;
+}
+
+.archive {
+  background: #fff;
+  border-bottom: 1px solid #333;
+  padding: 5px 10px;
+}
+
+.archive span.date {
+  float: right;
+  padding-top: 15px;
+}
+
+.post-view {
+  margin-top: 18px;
+}

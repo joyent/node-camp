@@ -1,0 +1,36 @@
+
+h2
+  | Admin panel
+  a(href: '/admin/logout') Logout
+
+h3 Posts
+table
+  thead
+    tr
+      th Title
+      th Date
+      th Action
+  tbody
+    - if (posts.length)
+      - each post in posts
+        tr
+          td= post.title
+          td= post.date
+          td
+            a(href: '/admin/remove/' + post.id) Remove
+    - else
+      tr
+        td(colspan: 3) No posts to display
+
+h3 New post
+form(action: '/admin/new', method: 'post')
+  fieldset
+    legend Create
+    dl
+      dt Title
+      dd
+        input(type: 'text', name: 'title')
+      dt Content
+      dd
+        textarea(name: 'content')
+    button Submit
