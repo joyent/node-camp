@@ -14,7 +14,7 @@ module.exports = {
       { url: '/' },
       { status: 200, headers: { 'Content-Type': 'text/html; charset=utf-8' }},
       function(res){
-        assert.includes(res.body, '<title>Express</title>');
+        assert.includes(res.body, 'My cool blog');
       });
   }
 

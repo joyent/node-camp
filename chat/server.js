@@ -9,6 +9,8 @@ var app = module.exports = express.createServer();
 
 var io = require('socket.io');
 
+var http = require('http');
+
 // Configuration
 
 app.configure(function(){
@@ -58,5 +60,28 @@ io.on('connection', function(client){
     client.broadcast({ announcement: client.sessionId + ' disconnected' });
   });
 });
+
+// twitter streaming
+var lastTweetId;
+
+setInterval(function(){
+  var client = http.createClient(80, 'search.twitter.com');
+  var request = client.request('GET', '/search.json?q=bieber', {Host: 'search.twitter.com'});
+  request.end();
+  request.on('response', function(response){
+    var data = '';
+    response.on('data', function(chunk){
+      data += chunk;
+    });
+    response.on('end', function(){
+      var obj = JSON.parse(data);
+      var lastTweet = obj.results.shift();
+      if (lastTweet.id_str != lastTweetId){
+        io.broadcast({ announcement: lastTweet.text });
+        lastTweetId = lastTweet.id_str;
+      }
+    });
+  });
+}, 5000);
 
 console.log("Express server listening on port %d", app.address().port)

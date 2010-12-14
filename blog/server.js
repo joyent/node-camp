@@ -39,7 +39,7 @@ app.configure('production', function(){
 app.get('/', function(req, res, next){
   storage.find(function(err, posts){
     if (err) return next(err);
-    res.render('index', {locals: { posts: posts } });
+    res.render('index', {locals: { posts: posts, localVariable: 'This is my local variable' } });
   });
 });
 
@@ -87,8 +87,10 @@ app.get('/admin/login', function(req, res){
 });
 
 app.get('/admin/logout', function(req, res){
-  req.logout();
-  res.redirect('/admin');
+  setTimeout(function(){
+    req.logout();
+    res.redirect('/admin');
+  }, 2000);
 });
 
 app.post('/admin/login', function(req, res){
