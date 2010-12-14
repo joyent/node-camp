@@ -1,12 +1,20 @@
 h2 Archive
 
-- if (!posts.length)
-  p
-    | No posts to show.
-    a(href: '/admin') Go to admin?
-- else
-  - each post in posts
-    .archive
-      span.date= post.date
-      h3
-        a(href: '/post/' + post.id)= post.title
+:markdown
+  | ## Hello
+
+:javascript
+  | var a = '5';
+  | var b = '5';
+
+:realtime(repaint: 'connections')
+  - if (!posts.length)
+    p
+      | No posts to show.
+      a(href: '/admin') Go to admin?
+  - else
+    - each post in posts
+      .archive
+        span.date= post.date
+        h3
+          a(href: '/post/' + post.id)= post.title

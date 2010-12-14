@@ -4,6 +4,8 @@ html
     title= this.app.set('name')
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
+    h1= localVariable
+    h2= this.connection.remoteAddress
     #header
       h1= this.app.set('name')
       nav

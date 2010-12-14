@@ -1,21 +1,20 @@
 
+// Run $ expresso
+
 /**
  * Module dependencies.
  */
 
-var app = require('../server');
+var app = require('../app');
 
-var assert = require('assert');
 
 module.exports = {
-
-  'GET /': function(){
+  'GET /': function(assert){
     assert.response(app,
       { url: '/' },
       { status: 200, headers: { 'Content-Type': 'text/html; charset=utf-8' }},
       function(res){
-        assert.includes(res.body, 'My cool blog');
+        assert.includes(res.body, '<title>Express</title>');
       });
   }
-
 };
