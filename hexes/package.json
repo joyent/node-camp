@@ -1,0 +1,6 @@
+{ "name" : "hexes"
+, "version" : "0.0.1"
+, "description" : "put some text here"
+, "scripts" : { "start" : "node server.js" }
+, "dependencies" : { "connect" : "0.5", "socket.io" : "0.6" }
+}
