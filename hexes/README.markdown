@@ -9,8 +9,13 @@ Install node + npm, and then install the deps with:
     npm install connect socket.io
 
 To start the server simply type the following in this folder:
- 
+
     node server.js
+
+You can also use npm to do both steps:
+
+    npm link # or `npm install` for non-link install
+    npm start hexes
 
 Then go to http://localhost:8080/ in a webkit browser (chrome, safari, etc..) to see the game served from your local laptop.
 
